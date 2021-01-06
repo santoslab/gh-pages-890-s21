@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Syllabus &mdash; CIS 890: Development of High-Assurance Software Systems, Spring 2021</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.4/journal/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/cis890.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CIS 890: Development of High-Assurance Software Systems, Spring 2021" href="index.html" />
+    <link rel="next" title="Tools" href="tools/index.html" />
+    <link rel="prev" title="Schedule" href="schedule.html" />
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Home</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="tools/index.html">Tools</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html"> <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="syllabus">
+<span id="id1"></span><h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">¶</a></h1>
+<h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3><hr class="docutils" />
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<p>The course will cover techniques for developing high assurance systems &#8211; systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques &#8211; techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification. The goal of this course teach techniques for developing critical software that would usually not be covered in other courses in your computer science degree program. In particular, the course will focus on writing requirements for safety critical systems, formal architecture definition, risk management techniques including various forms of hazard analysis, safety systems, and automated verification. We will aim to illustrate an end-to-end development process for critical systems using examples of varying size.</p>
+<p>Note:There is not enough time in the course to cover all topics
+relevant to safety-critical system development in detail.
+Topics chosen by the instructor in a particular semester will depend on the
+instructor&#8217;s current research activities.</p>
+</div>
+<div class="section" id="topics">
+<h2>Topics<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h2>
+<p>For Spring 2021, the following topics will be covered...</p>
+<ul class="simple">
+<li>Terms/concepts related to systems theory including control loops,
+sensing, actuating, etc.</li>
+<li>Real-time OS concepts and real-time schedulability analysis based on FreeRTOS</li>
+<li>Modeling embedded systems in AADL</li>
+<li>Developing and simulated real-time embedded systems using the Sireum
+Slang development environment</li>
+<li>Using the Arduino platform for building simple embedded systems</li>
+<li>Using the ARM-based STM32 Discovery boards to build moderate size
+embedded systems</li>
+<li>Applying concepts from above to safety-critical and IoT domains</li>
+</ul>
+<p>Additional topics to be addressed by individual students depending on
+their interests...</p>
+<ul class="simple">
+<li>Integrating the Slang, FreeRTOS, and STM 32 development context to
+support CAN-based communication</li>
+<li>Connecting an embedded system to Amazon Web Services using Amazon&#8217;s
+IoT infrastructure</li>
+<li>Using the hybrid systems annex of AADL to support modeling hybrid
+systems aspects of an embedded system</li>
+<li>Developing Slang libraries for interfacing with sensors/actuators on
+STM32 boards</li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<p>Objectives change depending on the instructor chosen content of the
+course. For Spring 2021, at the end of this course,
+you should be able to demonstrate the following knowledge and skills:</p>
+<ul class="simple">
+<li>Be able to build a simple embedded system using Arduino</li>
+<li>Be able to build a use a development tool-chain for STM32 on a
+realistic embedded systems project</li>
+<li>Be able to use the Slang Embedded tools to model and build embedded
+systems</li>
+<li>Run real-time schedulability analyses on an architectural
+specification of an embedded system</li>
+</ul>
+</div>
+<div class="section" id="meeting-times">
+<h2>Meeting Times<a class="headerlink" href="#meeting-times" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Time:</th><td class="field-body">Tuedays (T) &amp; Thursdays (U), 2:30pm - 3:45pm</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Place:</th><td class="field-body">DUE3099A (CS Conference Room)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>The course does not have any official prequisites, but CS 721
+Real-Time Systems would be helpful.</p>
+<p>There is quite a bit of programming in the course, so strong
+experience with programming and development environments will be helpful.</p>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>3 credits</p>
+</div>
+<div class="section" id="instructor">
+<h2>Instructor<a class="headerlink" href="#instructor" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cs.k-state.edu/~hatcliff">John Hatcliff</a>,
+Office:       2160 <a class="reference external" href="http://www.engg.ksu.edu/engineering-hall/">Engineering Hall</a>,
+Office Hours: 3:45-5:30pm Tuesday and Thursday</p>
+</div>
+<div class="section" id="teaching-assistant">
+<h2>Teaching Assistant<a class="headerlink" href="#teaching-assistant" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Venkat Margapuri</li>
+</ul>
+</div>
+<div class="section" id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Individual Homework Assignments and Quizzes (35%)</li>
+<li>Team Projects (55%)</li>
+<li>Participation (10%)</li>
+</ul>
+<p>Final letter grades are assigned based on the following scale:
+90% to earn an A, and 80% to earn a B; 70% to earn a C, and 60% to earn a D.</p>
+<p>This course includes both individual assignments and team
+projects. Individual assignments are expected to be completed
+&#8220;individually&#8221; (with no collaboration with other students). For team
+projects, each student is expected to make a unique and substantial
+contribution to the assigned project. Expectations for the project
+will be clarified by constructing a written contract that will
+summarize scope of the project, expected artifacts along with format
+and completeness of artifacts to be delivered, role and
+responsibilities of individual team members. The department does not
+assign a teaching assistant for this course. Because it will be
+difficult for the instructor to cover all the grading responsibilities
+for the course, the assessment mechanisms for the course will involve
+students in the course critiquing and evaluating work of other
+students (note that this type of activity will be overseen by the
+instructor to ensure quality).</p>
+</div>
+<div class="section" id="attendance-policy">
+<h2>Attendance Policy<a class="headerlink" href="#attendance-policy" title="Permalink to this headline">¶</a></h2>
+<p>In general, there will be NO make-up exams (and homework)!
+Special consideration will be given in only exceptional circumstances.
+Exceptional circumstances are generally limited to:</p>
+<ul class="simple">
+<li>Emergencies: death in student&#8217;s immediate family, or
+near-death experience of the student.</li>
+<li>Non-emergencies: certified excused absences for official university activities.</li>
+</ul>
+<p>If you believe you qualify for exceptional treatment, you must notify the
+instructor prior to the date of the exam or exercise to be missed.</p>
+</div>
+<div class="section" id="statement-regarding-academic-honesty">
+<h2>Statement Regarding Academic Honesty<a class="headerlink" href="#statement-regarding-academic-honesty" title="Permalink to this headline">¶</a></h2>
+<p>Kansas State University has an Honor System based on personal integrity, which
+is presumed to be sufficient assurance in academic matters one&#8217;s work is
+performed honestly and without unauthorized assistance.
+Undergraduate and graduate students, by registration, acknowledge the
+jurisdiction of the Honor System.
+The policies and procedures of the Honor System apply to all full and part-time
+students enrolled in undergraduate and graduate courses on-campus, off-campus,
+and via distance learning.
+The honor system website can be reach via the following URL:
+<a class="reference external" href="http://www.ksu.edu/honor">http://www.ksu.edu/honor</a>.</p>
+<p>A component vital to the Honor System is the inclusion of the Honor Pledge which
+applies to all assignments, examinations, or other course work undertaken by
+students.
+The Honor Pledge is implied, whether or not it is stated:
+&#8220;On my honor, as a student, I have neither given nor received unauthorized aid
+on this academic work.&#8221;
+A grade of XF can result from a breach of academic honesty.
+The F indicates failure in the course; the X indicates the reason is an Honor
+Pledge violation.</p>
+</div>
+<div class="section" id="other-administrative-issues">
+<h2>Other Administrative Issues<a class="headerlink" href="#other-administrative-issues" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Incompletenes:</strong> An incomplete (I) final grade will be given only by prior
+arrangement in exceptional circumstances conforming to departmental policy in
+which the bulk of course work has been completed in passing fashion.</li>
+<li><strong>Drop Policy:</strong> It is your responsibility to drop the course if you are
+enrolled but decide not to complete the course &#8212; there are no &#8220;automatic&#8221;
+drops due to nonattendance.
+The University allows a retake of a course with removal of the prior grade,
+at most once per course, for a maximum of five courses.</li>
+<li><strong>Students with Disabilities:</strong> If you have any physical or learning
+disability which will make it difficult for you to carry out the work as
+I have outlined in this syllabus or which will require academic
+accommodations, please notify me the first two weeks of the course.</li>
+<li><strong>Harrassment:</strong> One purpose of your education is to help you develop skills,
+approaches, and abilities that are necessary for effective teamwork, and for
+your success in your profession and as a citizen.
+It is important that you understand your rights and responsibilities regarding
+the University&#8217;s Sexual and Racial Harassment policies (full text of the
+policies can be found on KSU&#8217;s web site at
+<a class="reference external" href="http://www.ksu.edu/uauc/fhbook/fhxj.html">http://www.ksu.edu/uauc/fhbook/fhxj.html</a>).
+If you experience any situations, in or out of class, that seem inappropriate
+or that make you uncomfortable, a list of resources and courses of action to
+assist you can be found on the College of Engineering web site at
+<a class="reference external" href="http://www.engg.ksu.edu/harassment-statement">http://www.engg.ksu.edu/harassment-statement</a>.</li>
+<li><strong>Expectations for Classroom Conduct:</strong> All student activities in the
+University, including this course, are governed by the Student Judicial
+Conduct Code as outlined in the Student Government Association By Laws,
+Article VI, Section 3, number 2.
+Students that engage in behavior that disrupts the learning environment may be
+asked to leave the class.</li>
+<li><strong>Campus Safety:</strong> Kansas State University is committed to providing a safe
+teaching and learning environment for student and faculty members.
+In order to enhance your safety in the unlikely case of a campus emergency
+make sure that you know where and how to quickly exit your classroom and how
+to follow any emergency directives.
+To view additional campus emergency information go to the University&#8217;s main
+page, <a class="reference external" href="http://www.k-state.edu">http://www.k-state.edu</a>, and click on the Emergency Information button.</li>
+<li><strong>Copyright Issues:</strong> Class and lecture notes for this course carry a
+copyright.
+Students are prohibited from selling (or being paid for taking) notes during
+this course to or by any person or commercial firm without the express written
+permission of the professor teaching this course.</li>
+</ul>
+<p>For a more complete discussion of these issues see the course policies for the
+College of Engineering at Kansas State University:
+<a class="reference external" href="http://www.cis.ksu.edu/resources/intradept/syllabuspolicies">http://www.cis.ksu.edu/resources/intradept/syllabuspolicies</a>.</p>
+</div>
+<div class="section" id="notice-of-copyright">
+<h2>Notice of Copyright<a class="headerlink" href="#notice-of-copyright" title="Permalink to this headline">¶</a></h2>
+<p>All lectures and course materials are copyrighted.
+During this course students are prohibited from selling notes to or being paid
+for taking notes by any person or commercial firm without the express written
+permission of the instructor teaching this course.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

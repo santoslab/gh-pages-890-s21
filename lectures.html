@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Lectures &mdash; CIS 890: Development of High-Assurance Software Systems, Spring 2021</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.4/journal/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/cis890.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CIS 890: Development of High-Assurance Software Systems, Spring 2021" href="index.html" />
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Home</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="#">Lectures</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="tools/index.html">Tools</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html"> <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="lectures">
+<span id="id1"></span><h1>Lectures<a class="headerlink" href="#lectures" title="Permalink to this headline">¶</a></h1>
+<h3>CIS 890: Development of High-Assurance Software Systems</h3><div class="section" id="course-administration">
+<h2>Course Administration<a class="headerlink" href="#course-administration" title="Permalink to this headline">¶</a></h2>
+<p><strong>Course Overview</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-00-course-administration-2019.pdf">Course Administration</a></li>
+</ul>
+</div>
+<div class="section" id="safety-critical-systems-concepts">
+<h2>Safety Critical Systems Concepts<a class="headerlink" href="#safety-critical-systems-concepts" title="Permalink to this headline">¶</a></h2>
+<p id="lecture-intro-control-loops-temp-controller"><strong>Lecture: Control Loop Basics illustrated with Temperature Controller Example</strong></p>
+<p>This lecture introduces concepts associated with &#8220;control loops&#8221; &#8211; a
+foundational concept in the design and implementation of embedded
+systems and safety-critical systems.  A control loop consists of the
+&#8220;real-world
+thing&#8221; that the system is trying to control (the controlled process),
+the controller (i.e., software/hardware that makes decisions about how
+to control the controlled process), sensors (used by the controller to get
+&#8220;readings&#8221; the real-world state of the controlled process), and
+actuators (used by the controller to change the state of the
+controlled process in some way).  The lecture briefly discusses how
+requirements engineering and safety reasoning relate to control loops.</p>
+<ul class="simple">
+<li>Slides (<a class="reference external" href="http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-01-Temp-Control-Control-Loops.pdf">.pdf</a>)</li>
+<li>Study Guide (<a class="reference external" href="http://www.santoslab.org/pub/high-assurance/module-intro/study-guides/INTRO-01-Temp-Control-Control-Loops-study-guide.txt">.txt</a>)</li>
+</ul>
+</div>
+<div class="section" id="aadl">
+<h2>AADL<a class="headerlink" href="#aadl" title="Permalink to this headline">¶</a></h2>
+<p>(content will appear here throughout the semester)</p>
+</div>
+<div class="section" id="slang-embedded">
+<h2>Slang Embedded<a class="headerlink" href="#slang-embedded" title="Permalink to this headline">¶</a></h2>
+<p id="lecture-slang-embedded-overview"><strong>Lecture: Slang Embedded Tool Chain Overview</strong></p>
+<p>This lecture presents an overview KSU SAnToS Lab&#8217;s Slang Embedded tool chain for
+developing high-assurance embedded systems.  The tool includes a
+component modeling and analysis layer based on the AADL modeling framework, code
+generation, development, and simulation using Slang (a safety-critical
+subset of Scala), and code generation to C for various micro-kernel
+and separation platforms.  Other lectures will &#8220;drill down&#8221; into the
+details of each of the tool chain elements.</p>
+<ul class="simple">
+<li>Slides (<a class="reference external" href="http://www.santoslab.org/pub/high-assurance/module-slang/slides/Slang-Embedded-Pipeline-Overview.pdf">.pdf</a>)</li>
+</ul>
+</div>
+<div class="section" id="stm32-and-freertos">
+<h2>STM32 and FreeRTOS<a class="headerlink" href="#stm32-and-freertos" title="Permalink to this headline">¶</a></h2>
+<p id="lecture-stm32-tool-chain-installation"><strong>Exercise: STM32 Tool Chain Installation and Blinking LED</strong></p>
+<p>This exercise guides you through the installation of development tools
+for STM32F4 Discovery Boards and construction of a simple FreeRTOS
+task to blink one of the LEDs built into the Discovery  board.</p>
+<ul class="simple">
+<li>Exercise (<a class="reference external" href="http://www.santoslab.org/pub/high-assurance/module-stm32/CIS890-STM32-Tool-Chain-Installation-and-LED-Blink.pdf">.pdf</a>)</li>
+</ul>
+</div>
+<div class="section" id="arduino">
+<h2>Arduino<a class="headerlink" href="#arduino" title="Permalink to this headline">¶</a></h2>
+<p id="lecture-arduino-tutorial-pdf"><strong>Arduino (Elegoo) Mega 2560 Tutorials</strong></p>
+<p>This 225-page document provides 33 exercises to help you learn how to
+program all of the different widges that come with the Arduino
+(Elegoo) Mega 2560 kit that is required for the course (you can
+purchase the  kit from <a class="reference external" href="https://www.amazon.com/gp/product/B01EWNUUUA/ref=ppx_yo_dt_b_asin_title_o01__o00_s00?ie=UTF8&amp;psc=1">Amazon</a>).</p>
+<ul class="simple">
+<li>Tutorial Document (<a class="reference external" href="http://www.santoslab.org/pub/high-assurance/module-arduino/Elegoo-Mega-2560-Tutorials.pdf">.pdf</a>)</li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="lectures-from-previous-semesters">
+<h1>Lectures from Previous Semesters<a class="headerlink" href="#lectures-from-previous-semesters" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python"><div class="highlight"><pre>The lectures from previous semesters are provided below as a resource.
+</pre></div>
+</div>
+<hr class="docutils" />
+<hr>
+
+<h1>Course Overview and Introduction to Safety Concepts</h1>
+<ul>
+<li> Isolette: A Simple Safety Critical System
+<ul>
+
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-01-Isolette.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-intro/videos/INTRO-01-Isolette.mov">.mov)</a></li>
+<li> Study Guide: (<a href="http://www.santoslab.org/pub/high-assurance/module-intro/study-guides/INTRO-01-Isolette--study-guide.txt">.txt)</a></li>
+</ul>
+<li> Differences between Conventional Development and Development of Safety-Critical Systems</li>
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-03-Safety-Critical-Development.pdf">.pdf)</a></li>
+<li> Reading: Hatcliff et al. "Certifiably Safe Software-Dependent Systems: Challenges and Directions", Future of Software Engineering 2014, at the International Conference on Software Engineering  (Section 2.2) (<a href="http://santoslab.org/pub/high-assurance/module-intro/reading/Hatcliff-al-ICSE-FOSE-2014-Certification.pdf">.pdf</a>)
+</ul>
+<li> Basic Safety-Related Terminology</li>
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-02-Safety-Terminology.pdf">.pdf)</a></li>
+<li> Reading: Hatcliff et al. "Certifiably Safe Software-Dependent Systems: Challenges and Directions", Future of Software Engineering 2014, at the International Conference on Software Engineering  (Sections 1,2.1) (<a href="http://santoslab.org/pub/high-assurance/module-intro/reading/Hatcliff-al-ICSE-FOSE-2014-Certification.pdf">.pdf</a>)
+<li> Study Guide: (<a href="http://www.santoslab.org/pub/high-assurance/module-intro/study-guides/INTRO-02-Safety-Terminology--study-guide.txt">.txt)</a></li>
+</ul>
+</ul>
+
+<hr>
+
+<h2>Requirements Management for Safety Critical Systems</h2>
+
+<h3>General Reading</h3>
+<ul>
+<li>FAA Requirements Engineering Management Handbook (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/reading/FAA-DoT-Requirements-AR-08-32.pdf">.pdf</a>)</li>
+</ul>
+
+<h3>Lectures</h3>
+<ul>
+<li> Introduction to Requirements
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/Module-Req-00-Requirements-Intro.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/Module-Req-00-Requirements-Intro.mov">.mov)</a></li>
+</ul>
+<li> FAA REMH Overview
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-00-Overview.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-00-Overview.mov">.mov)</a></li>
+</ul>
+<li> FAA REMH: System Overview
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-01-System-Overview.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-01-System-Overview.mov">.mov)</a></li>
+<li> Supplement: Advice and common pitfalls (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-01-System-Overview--advice.pdf">.pdf</a>,<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-01-System-Overview--advice.mov">.mov</a>)
+</ul>
+
+<li> FAA REMH: Identify the System Boundary
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-02-Identify-the-System-Boundary.pdf">.pdf)
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-02-Identify-the-System-Boundary.mov">.mov)</a></li>
+</ul>
+
+<li> FAA REMH: Develop the Operational Concepts
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-03-Develop-the-Operational-Concepts.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-03-Develop-the-Operational-Concepts.mov">.mov)</a></li>
+<li> Additional lecture slides on details of use case writing based on Cockburn's <em>Writing Effective Use Cases</em>
+<ul>
+<li>Action Steps
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/Module-Req-Use-Cases-Action-Steps.pdf">.pdf)</a>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/Module-Req-Use-Cases-Action-Steps.mp4">.mp4)</a>
+</ul>
+<li>Extensions
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/Module-Req-Use-Cases-Extensions.pdf">.pdf)</a></a>
+</ul>
+
+
+</ul>
+</ul>
+
+<li> FAA REMH: Identify the Environment Assumptions
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-04-Identify-the-Environmental-Assumptions.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-04-Identify-the-Environmental-Assumptions.mov">.mov)</a></li>
+</ul>
+
+<li> FAA REMH: Develop the Functional Architecture
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-05-Develop-the-Functional-Architecture.pdf">.pdf)
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/videos/FAA-REMH-05-Develop-the-Functional-Architecture.mov">.mov)</a></li>
+</ul>
+
+<li> FAA REMH: Revise the Functional Architecture to Meet Implementation Constraints
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-06-Revise-the-Architecture-to-Meet-Implementation-Constraints.pdf">.pdf)</a></li>
+</ul>
+
+<li> FAA REMH: Identify the System Modes
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-07-Identify-the-System-Modes.pdf">.pdf)</a></li>
+</ul>
+
+<li> FAA REMH: Develop Detailed Requirements
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-08-Develop-Detailed-Requirements.pdf">.pdf)</a></li>
+</ul>
+
+<li> FAA REMH: Define the Software Requirements
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-requirements/slides/FAA-REMH-09-Define-the-Software-Requirements.pdf">.pdf)</a></li>
+</ul>
+</ul>
+
+<hr>
+
+<h2>PCA Pump Project</h2>
+
+<h3>Lectures</h3>
+<ul>
+<li> PCA Pump -- Introduction
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-pca-pump/slides/PCA-Pump--Intro.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-pca-pump/videos/PCA-Pump--Intro.mp4">.mp4)</a></li>
+</ul>
+<li> PCA Pump -- Architecture Overview
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-pca-pump/slides/PCA-Pump--Architecture-Overview.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-pca-pump/videos/PCA-Pump--Architecture-Overview.mp4">.mp4)</a></li>
+</ul>
+</ul>
+
+<hr>
+
+<h2>Modeling Safety-Critical Systems in the Architecture and Analysis Definition Language (AADL)</h2>
+
+<h3>Lectures</h3>
+<ul>
+<li> Modeling the Isolette in AADL
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-aadl/slides/AADL-Isolette.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-aadl/videos/AADL-Isolette.mov">.mov)</a></li>
+</ul>
+</ul>
+
+<hr>
+
+<h2>Risk Management</h2>
+<h3>General Reading</h3>
+<ul>
+<li>"Basic Concepts and Taxonomy of Dependable and Secure Computing", Algirdas Avizienis, Jean-Claude Laprie, Brian Randell, and Carl Landwehr  (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/Avizienis--Taxonomy.pdf">.pdf</a>)</li>
+<li>"Architecture Fault Modeling and Analysis with the AADL Error Modeling Annex v.2", Peter Feiler John Hudak Julien Delange David P. Gluch (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/AADL-EMv2-Feiler-etal-Architecture-Fault-Modeling-and-Analysis.pdf">.pdf</a>)</li>
+<li>"Illustrating the AADL Error Modeling Annex (v. 2) Using a Simple Safety-Critical Medical Device", Brian Larson, John Hatcliff, Kim Fowler, Julien Delange (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/hilt-2013-isolette-emv2.pdf">.pdf</a>)</li>
+</ul>
+
+<h3>Lectures</h3>
+<ul>
+<li> Functional Hazard Analysis (FuHA)
+<ul>
+<li> Reading:
+<ul>
+<li> Functional Hazard Analysis, Chapter 15, <em>Hazard Analysis Techniques for System Safety</em>, Clifton A. Ericson, II
+<li> <a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/FHA-AFI-RVSM-Altran.pdf">Functional Hazard Analysis -- real-life example from the AFI RVSM project (air traffic control), performed by Altran</a>
+<li> <a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/FHA-PSSA-EMMA-Thales.pdf">Functional Hazard Assessment and Preliminary Safety Assessment -- real-life example for A Generic Advanced Surface Movement, Guidance and Control System, performed by Thales</a>
+<li> <a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/FHA-New-Zealand-Air-Force.pdf">Functional Hazard Analysis What? The Why & How (slides from New Zealand Air Force)</a>
+</ul>
+</ul>
+<li> Fault Tree Analysis (FTA)
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/slides/RISK-MANAGEMENT--FTA.pdf">.pdf)</a></li>
+</ul>
+<li> Failure Modes, Criticality, and Effects Analysis (FMECA)
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/slides/FMECA-John-Hatcliff-part-a.pdf">.pdf)</a></li>
+</ul>
+<li> Event Tree Analysis (ETA)
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/slides/RISK-MANAGEMENT--ETA.pdf">.pdf)</a></li>
+</ul>
+<li> System-Theoretic Process Analysis (STPA)
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/slides/RISK-MANAGEMENT--STPA.pdf">.pdf)</a></li>
+<li> Reading:
+<ul>
+<li> <a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/STPA-Primer-v0.pdf">STPA Primer</li>
+<li> <a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/STPA-Balgos-MS-Thesis.pdf">Balgos, MS Thesis</a> -- A Systems Theoretic Application to Design for the Safety of Medical Diagnostic Devices</li>
+<li> <a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/reading/STPA-John-Thomas-PhD-Dissertation.pdf">Thomas, PhD Dissertation</a> -- Extending and Automating a Systems-theoretic Hazard Analysis for Requirements Generation and Analysis</li>
+</ul>
+</ul>
+</ul>
+
+<ul>
+<li> AADL EMv2 -- Introduction
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/slides/EMV2-Introduction.pdf">.pdf)</a></li>
+</ul>
+</ul>
+
+<ul>
+<li> AADL EMv2 -- Error Types and Library
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-risk-management/slides/EMV2-Error-Types-and-Library.pdf">.pdf)</a></li>
+</ul>
+</ul>
+
+<hr>
+
+<h2>Disaster Cast Podcast </h2>
+
+<h3>Instructions</h3>
+<ul>
+<li>Instructions for Disaster Cast notes (<a href="http://www.santoslab.org/pub/high-assurance/module-disaster-cast/disaster-cast-instructions.txt">.txt</a>)</li>
+</ul>
+
+<hr>
+
+<h2>Medical Application Platforms</h2>
+
+<h3>General Reading</h3>
+<ul>
+<li>John Hatcliff, Andrew King, Insup Lee, Alisdair Macdonald, Anura Fernando, Michael Robkin, Eugene Vasserman, Sandy Weininger, Julian Goldman. "Rationale and Architecture Principles for Medical Application Platforms", Proceedings of the 2012 International Conference on Cyber-Physical Systems, pp. 3-12, April, 2012. (<a href="http://people.cis.ksu.edu/~hatcliff/Medical-Application-Platforms.pdf">.pdf</a>)</li>
+</ul>
+
+
+<h3>Lectures</h3>
+<ul>
+<li> Introduction to Medical Application Platforms
+<ul>
+<li> Slides: (<a href="http://www.santoslab.org/pub/high-assurance/module-map/slides/01-MAP--Intro.pdf">.pdf)</a></li>
+<li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-map/videos/01-MAP--Intro.mov">.mov)</a></li>
+</ul>
+</ul></div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

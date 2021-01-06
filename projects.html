@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Projects &mdash; CIS 890: Development of High-Assurance Software Systems, Spring 2021</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.4/journal/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/cis890.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CIS 890: Development of High-Assurance Software Systems, Spring 2021" href="index.html" />
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Home</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="lectures.html">Lectures</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="tools/index.html">Tools</a></li>
+                <li><a href="#">Projects</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html"> <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="projects">
+<span id="id1"></span><h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h1>
+<h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3><p>This class will include several projects, and this page will be
+updated throughout the semester to provide background material and
+resources for the projects.</p>
+<div class="section" id="pca-pump">
+<h2>PCA Pump<a class="headerlink" href="#pca-pump" title="Permalink to this headline">¶</a></h2>
+<p>In a Department of Homeland Security research project, SAnToS
+researchers worked with Adventium Labs to develop an open source
+medical device platform and a Patient Controlled Analgesic Pump built
+using the platform.  Much of the functionality of the PCA Pump has
+already been implemented in the Slang Embedded development framework.</p>
+<p>This project will enhance the existing PCA Pump infrastructure by:</p>
+<ul class="simple">
+<li>adding real-time annotations in AADL suitable for getting the project to run
+through the AADL schedulability analysis tools,</li>
+<li>developing a deployment of the pump function on the STM 32 and Free RTOS
+development boards</li>
+<li>developing hardware interfaces for sensors and actuators for the
+Open PCA Pump</li>
+</ul>
+<p>The overall focus for this project is developing interfaces for
+realistic sensors and actuators and getting the real-time aspects of
+the PCA pump figured out.</p>
+</div>
+<div class="section" id="mine-water-pump-monitoring-and-controlling">
+<h2>Mine Water Pump Monitoring and Controlling<a class="headerlink" href="#mine-water-pump-monitoring-and-controlling" title="Permalink to this headline">¶</a></h2>
+<p>This is a well-known example with the formal methods and real-time
+systems community and is presented in detail in the book &#8220;Analyzeable
+Real-Time Systems: Programmed in Ada&#8221; by Alan Burns and Andy Wellings.
+In the book, models (but not in AADL) of the system are presented, and
+implementations are given in Ada.</p>
+<p>This project will adapt the mine control implementation from the Burns
+and Wellings book by:</p>
+<ul class="simple">
+<li>Re-working the modeling of the example in AADL</li>
+<li>Adding real-time time annotations to AADL, following the detailed
+specifications in the Burns and Wellings book</li>
+<li>Developing mocked-up sensors and actuators for the example to be
+controlled through the STM32 board (sensors: CO2, Methane, water
+levels, water flows; actuators: water pump, etc.)</li>
+<li>Developing an operator interface for the example</li>
+</ul>
+</div>
+<div class="section" id="isolette">
+<h2>Isolette<a class="headerlink" href="#isolette" title="Permalink to this headline">¶</a></h2>
+<p>This is an example used to illustrate proper engineering of
+requirements in the FAA Requirements Engineering Management Handbook
+that we have used previously in the course.</p>
+<p>This is a slightly smaller example, and the work will come from
+expanding it in several directions, including having one or more
+communication interfaces associated with it.</p>
+</div>
+<div class="section" id="slang-embedded">
+<h2>Slang Embedded<a class="headerlink" href="#slang-embedded" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

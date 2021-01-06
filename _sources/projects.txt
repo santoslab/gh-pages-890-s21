@@ -1,0 +1,77 @@
+.. _projects:
+
+Projects
+########
+
+.. raw:: html
+
+   <h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3>
+
+.. include:: def.rst
+
+This class will include several projects, and this page will be
+updated throughout the semester to provide background material and
+resources for the projects.
+
+PCA Pump 
+********************************
+
+In a Department of Homeland Security research project, SAnToS
+researchers worked with Adventium Labs to develop an open source
+medical device platform and a Patient Controlled Analgesic Pump built
+using the platform.  Much of the functionality of the PCA Pump has
+already been implemented in the Slang Embedded development framework.
+
+This project will enhance the existing PCA Pump infrastructure by:
+
+* adding real-time annotations in AADL suitable for getting the project to run
+  through the AADL schedulability analysis tools,
+* developing a deployment of the pump function on the STM 32 and Free RTOS
+  development boards
+* developing hardware interfaces for sensors and actuators for the
+  Open PCA Pump
+
+The overall focus for this project is developing interfaces for
+realistic sensors and actuators and getting the real-time aspects of
+the PCA pump figured out.
+
+Mine Water Pump Monitoring and Controlling
+******************************************
+
+This is a well-known example with the formal methods and real-time
+systems community and is presented in detail in the book "Analyzeable
+Real-Time Systems: Programmed in Ada" by Alan Burns and Andy Wellings.
+In the book, models (but not in AADL) of the system are presented, and
+implementations are given in Ada.
+
+This project will adapt the mine control implementation from the Burns
+and Wellings book by:
+
+* Re-working the modeling of the example in AADL
+* Adding real-time time annotations to AADL, following the detailed
+  specifications in the Burns and Wellings book
+* Developing mocked-up sensors and actuators for the example to be
+  controlled through the STM32 board (sensors: CO2, Methane, water
+  levels, water flows; actuators: water pump, etc.)
+* Developing an operator interface for the example
+
+  
+Isolette 
+********************************
+
+This is an example used to illustrate proper engineering of
+requirements in the FAA Requirements Engineering Management Handbook
+that we have used previously in the course.
+
+This is a slightly smaller example, and the work will come from
+expanding it in several directions, including having one or more
+communication interfaces associated with it.
+
+
+
+
+
+
+
+Slang Embedded
+********************************

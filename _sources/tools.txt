@@ -1,0 +1,54 @@
+.. toctree::
+   :hidden:
+
+   syllabus
+   lectures
+   schedule
+   tools
+   projects
+
+  
+Home
+####
+
+.. raw:: html
+
+   <h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3>
+
+.. include:: def.rst
+
+----
+
+The course will cover techniques for developing high assurance systems -- systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques -- techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification. The goal of this course teach techniques for developing critical software that would usually not be covered in other courses in your computer science degree program. In particular, the course will focus on writing requirements for safety critical systems, formal architecture definition, risk management techniques including various forms of hazard analysis, safety systems, and automated verification. We will aim to illustrate an end-to-end development process for critical systems using examples of varying size.
+    
+==================================================  ====================================================================
+**Lectures**                                        Tuesday (T) & Thursday (U), 2:30pm - 3:45pm, |DUE 3099A|
+**Instructor**                                      `John Hatcliff <http://cs.ksu.edu/~hatcliff>`__,
+                                                    Office:       2183 |EngHall|,
+                                                    Office Hours: 3:45-5pm Tuesday and Thursday,
+**Teaching Assistant**                              Venkat Margapuri
+
+**E-mail**                                          ``help-890@santoslab.org`` Use this address for all questions about
+                                                    lectures, homework, and appointments -- do not email the TAs
+                                                    or instructor directly.  Do not use Canvas messaging to contact us.
+
+                                                    If you have a question about a homework, be sure to push your work
+                                                    to your Github repo before emailing.  Emailing screen shots and
+                                                    code snippets only instead of pushing to Github will slow our response
+                                                    to you.
+
+==================================================  ====================================================================
+
+----
+
+* :ref:`syllabus`
+
+* :ref:`lectures`
+
+* :ref:`schedule`
+
+* :ref:`tools`
+
+* :ref:`projects` 
+
+

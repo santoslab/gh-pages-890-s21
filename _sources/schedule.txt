@@ -1,0 +1,202 @@
+.. _schedule:
+
+Schedule
+########
+
+.. raw:: html
+
+   <h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3>
+
+.. include:: def.rst
+
+----
+
+Week 1: January 21
+=================================================================
+
+**Lectures:**
+
+* Course Administration 
+* System Theory and Control Loop Concepts (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
+
+* Control Loop Examples
+
+**Homework (and tool installation):**
+
+* `Setting up the STM32 Development Tools <https://k-state.instructure.com/courses/74651/assignments/798070>`__  
+
+  This assignment will guide you through the process of setting up the
+  development tools for programming applications directly in FreeRTOS
+  on the STMF4 discovery boards.  **Due January 28, 11:59pm**
+Week 2: January 28 
+=================================================================
+    
+**Lectures:**
+
+* Slang Embedded Development Overview (:ref:`lecture link <lecture-slang-embedded-overview>`)
+* Introduction to Arduino 
+
+**Homework:**
+
+* `Setting up the Slang Embedded Development Environment
+  <https://k-state.instructure.com/courses/74651/assignments/804992>`__
+
+  This assignment covers the basics of translating from AADL to Slang,
+  implementing component behaviors in Slang, and then running the
+  Slang system in a JVM.  It uses the system modeling framework
+  (OSATE/AADL) that we will use to begin modeling on projects in a few
+  weeks after we have some lectures introducing more of the details of
+  AADL.  **Due February 7, 11:59pm**
+  
+
+Week 3: February 4 
+=================================================================
+    
+**Lectures:**
+
+* AADL Overview
+* Slang Embedded Development 
+
+**Homework:**
+
+* `Prototyping the Temperature Controller Circuit with Arduino
+  <https://k-state.instructure.com/courses/74651/assignments/806511>`__
+
+  In this assignment, you will build and test a simple circuit to
+  simulate the hardware of the temperature controller example.   We've
+  already a lot of this work in class already.  The main point is to
+  build the circuit with the red LED (to simulate the heater/fan) and
+  the potentiometer (to simulate the temperature sensor).  You will
+  then test each component individually, then create a simple program
+  to simulate the logic of temperature controller example.
+  **Due February 14, 11:59pm**
+  
+
+Week 4: February 11
+=================================================================
+    
+**Lectures:**
+
+* Slang Embedded Development (continued)
+
+**Homework:**
+
+* `Slang Embedded 02 -- creating components
+  <https://k-state.instructure.com/courses/74651/assignments/810513>`__
+
+  In this assignment, you will learn more about using the Slang
+  Embedded modeling and development that we will use later in the
+  course to build our high-assurance embedded systems. This homework
+  focuses on helping you design an interface for a new
+  component in AADL, generate interface code for the component, and
+  program the business logic for the component.
+  **Due Friday, February 22, 11:59pm**
+
+**Notes:**
+
+* Dr. Hatcliff traveling to AADL committee meeting and demo
+
+Week 5: February 18
+=================================================================
+    
+**Lectures:**
+
+* AADL Concepts -- Port-based Communication
+* FreeRTOS and STM32 development
+
+**Homework:**
+
+* Using FreeRTOS and STM 32 boards to control the Temperature Control
+  Hardware
+
+
+  
+Week 6: February 25
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 7: March 4
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Spring Break: March 11
+=================================================================
+    
+*Have Fun!*
+
+Week 8: March 18
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 9: March 25
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 10: April 1
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 11: April 8
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 12: April 15
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 13: April 22
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 14: April 29
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Week 15: May 6
+=================================================================
+    
+**Lectures:**
+
+* (to be announced)
+
+Finals: May 13
+=================================================================
+    
+*We will not have a final, but we will meet to discuss project outcomes*
+
+
+
+
+  
+  
+  
+  
+  
+

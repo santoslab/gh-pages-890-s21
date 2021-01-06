@@ -1,0 +1,24 @@
+.. _tools:
+
+Tools
+#####
+
+.. raw:: html
+
+   <h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3>
+
+.. include:: ../def.rst
+
+----
+
+Git 
+*************
+
+(To be announced)
+
+
+Slang Embedded Development
+****************************
+
+(to be announced)
+
