@@ -11,184 +11,218 @@ Schedule
 
 ----
 
-Week 1: January 21
+Week 1: January 25
 =================================================================
 
 **Lectures:**
 
 * Course Administration 
-* System Theory and Control Loop Concepts (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
-
-* Control Loop Examples
+* Course Overview
+* HAMR Overview
 
 **Homework (and tool installation):**
 
-* `Setting up the STM32 Development Tools <https://k-state.instructure.com/courses/74651/assignments/798070>`__  
+* Installing and Running a HAMR-built System 
 
-  This assignment will guide you through the process of setting up the
-  development tools for programming applications directly in FreeRTOS
-  on the STMF4 discovery boards.  **Due January 28, 11:59pm**
-Week 2: January 28 
-=================================================================
-    
-**Lectures:**
+  This assignment will guide you through the process of setting up 
+  HAMR as it will be used for the first several assignments.
+  **Due February 1, 11:59pm**
 
-* Slang Embedded Development Overview (:ref:`lecture link <lecture-slang-embedded-overview>`)
-* Introduction to Arduino 
+**Administration:**
 
-**Homework:**
+* Student/Instructor meetings (appointments with individual students)
 
-* `Setting up the Slang Embedded Development Environment
-  <https://k-state.instructure.com/courses/74651/assignments/804992>`__
+  Students and Instructor will get to know each other and discuss
+  possible project topics.
 
-  This assignment covers the basics of translating from AADL to Slang,
-  implementing component behaviors in Slang, and then running the
-  Slang system in a JVM.  It uses the system modeling framework
-  (OSATE/AADL) that we will use to begin modeling on projects in a few
-  weeks after we have some lectures introducing more of the details of
-  AADL.  **Due February 7, 11:59pm**
-  
-
-Week 3: February 4 
+Week 2: February 1
 =================================================================
     
 **Lectures:**
 
 * AADL Overview
-* Slang Embedded Development 
+* AADL/HAMR Workflow Overview (what you typically do in AADL when using HAMR)
+* AADL: Modeling Embedded Software
+* AADL: Computational Paradigm as viewed by HAMR
+* AADL: Software Model - HAMR Linting  
 
 **Homework:**
 
-* `Prototyping the Temperature Controller Circuit with Arduino
-  <https://k-state.instructure.com/courses/74651/assignments/806511>`__
+* AADL: Basic Embedded Software Modeling 
 
-  In this assignment, you will build and test a simple circuit to
-  simulate the hardware of the temperature controller example.   We've
-  already a lot of this work in class already.  The main point is to
-  build the circuit with the red LED (to simulate the heater/fan) and
-  the potentiometer (to simulate the temperature sensor).  You will
-  then test each component individually, then create a simple program
-  to simulate the logic of temperature controller example.
-  **Due February 14, 11:59pm**
+  This assignment will cover building simple AADL models of real-time tasks
+  with port communication.  **Due February 8, 11:59pm**
+  
+**Administration:**
+
+* Student/Instructor meetings - further discussion of project planning
+
+Week 3: February 8
+=================================================================
+    
+**Lectures:**
+
+* HAMR/Slang Overview
+* HAMR/Slang APIs for Threading and Port-based Communication
+* HAMR/Slang Unit Testing
+
+**Homework:**
+
+* HAMR/Slang Unit Testing
+
+  This assignment will cover unit testing of AADL/HAMR/Slang periodic and sporadic components.
+  with port communication.  **Due February 8, 11:59pm**
+  
+**Administration:**
+
+* Student/Instructor meetings - project proposals
   
 
-Week 4: February 11
+Week 4: February 15
 =================================================================
     
 **Lectures:**
 
-* Slang Embedded Development (continued)
-
-**Homework:**
-
-* `Slang Embedded 02 -- creating components
-  <https://k-state.instructure.com/courses/74651/assignments/810513>`__
-
-  In this assignment, you will learn more about using the Slang
-  Embedded modeling and development that we will use later in the
-  course to build our high-assurance embedded systems. This homework
-  focuses on helping you design an interface for a new
-  component in AADL, generate interface code for the component, and
-  program the business logic for the component.
-  **Due Friday, February 22, 11:59pm**
-
-**Notes:**
-
-* Dr. Hatcliff traveling to AADL committee meeting and demo
-
-Week 5: February 18
-=================================================================
-    
-**Lectures:**
-
-* AADL Concepts -- Port-based Communication
-* FreeRTOS and STM32 development
-
-**Homework:**
-
-* Using FreeRTOS and STM 32 boards to control the Temperature Control
-  Hardware
-
-
+* Isolette Overview
+* Isolette Code Walkthrough
+* System Theory and Control Loop Concepts (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
   
-Week 6: February 25
+**Homework:**
+
+* Isolette - Code Review and Execution
+
+  In this assignment, you will learn about the Isolette
+  system as implemented in Slang, how to make some simple changes
+  to the code, and how to execute the system.
+  **Due February 22, 11:59pm**
+
+**Administration:**
+
+* Student/Instructor meetings - project discussions
+
+Week 5: February 22
+=================================================================
+
+Project Phase I class reports
+
+**Lectures:**
+
+(no lectures -- only class meetings about projects)
+
+**Homework:**
+
+(no homework)
+  
+Week 6: March 1
+=================================================================
+    
+**Lectures:**
+
+* AADL Flow Specifications
+* HAMR: Awas Basic Information Flow Querying and Visualization
+* HAMR: Inspector framework
+
+**Homework:**
+
+* AADL Flow Specs and Awas Information Flow
+
+  In this assignment, you will add AADL flow annotations to models
+  use the Awas tools to visualize and query information flows.
+  **Due March 8, 11:59pm**
+
+* AADL Inspector Framework
+
+  In this assignment, you will add use the HAMR Inspector Framework 
+  for understanding the behaviors of HAMR-built systems as they execute.
+  **Due March 8, 11:59pm**
+
+**Administration:**
+
+* Student/Instructor meetings - project discussions
+
+Week 7: March 8
+=================================================================
+    
+**Lectures:**
+
+* HAMR: Slang Extensions
+* HAMR: Slang/Scala/Java - Swing User Interfaces for HAMR 
+
+**Homework:**
+
+* Slang extensions and UI implementation  **Due February 82211:59pm**
+
+**Administration:**
+
+* Student/Instructor meetings - project discussions
+
+Week 8: March 15
+=================================================================
+
+Project Phase I class reports
+
+**Lectures:**
+
+(no lectures -- only class meetings about projects)
+
+**Homework:**
+
+(no homework)
+
+
+Week 9: March 22 -- "Spring Break" -- no classes
+=================================================================
+    
+**Lectures:**
+
+* (no classes)
+
+Week 10: March 29
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 7: March 4
+Week 11: April 5
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Spring Break: March 11
-=================================================================
-    
-*Have Fun!*
-
-Week 8: March 18
+Week 12: April 12
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 9: March 25
+Week 13: April 19
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 10: April 1
+Week 14: April 26
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 11: April 8
+
+Week 15: May 3
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 12: April 15
+Finals Week: May 10
 =================================================================
-    
-**Lectures:**
-
-* (to be announced)
-
-Week 13: April 22
-=================================================================
-    
-**Lectures:**
-
-* (to be announced)
-
-Week 14: April 29
-=================================================================
-    
-**Lectures:**
-
-* (to be announced)
-
-Week 15: May 6
-=================================================================
-    
-**Lectures:**
-
-* (to be announced)
-
-Finals: May 13
-=================================================================
-    
+        
 *We will not have a final, but we will meet to discuss project outcomes*
 
 

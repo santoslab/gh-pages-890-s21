@@ -99,175 +99,203 @@
   <div class="section" id="schedule">
 <span id="id1"></span><h1>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h1>
 <h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3><hr class="docutils" />
-<div class="section" id="week-1-january-21">
-<h2>Week 1: January 21<a class="headerlink" href="#week-1-january-21" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-1-january-25">
+<h2>Week 1: January 25<a class="headerlink" href="#week-1-january-25" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>Course Administration</li>
-<li>System Theory and Control Loop Concepts (<a class="reference internal" href="lectures.html#lecture-intro-control-loops-temp-controller"><span>lecture link</span></a>)</li>
-<li>Control Loop Examples</li>
+<li>Course Overview</li>
+<li>HAMR Overview</li>
 </ul>
 <p><strong>Homework (and tool installation):</strong></p>
 <ul>
-<li><p class="first"><a class="reference external" href="https://k-state.instructure.com/courses/74651/assignments/798070">Setting up the STM32 Development Tools</a></p>
-<p>This assignment will guide you through the process of setting up the
-development tools for programming applications directly in FreeRTOS
-on the STMF4 discovery boards.  <strong>Due January 28, 11:59pm</strong></p>
+<li><p class="first">Installing and Running a HAMR-built System</p>
+<p>This assignment will guide you through the process of setting up
+HAMR as it will be used for the first several assignments.
+<strong>Due February 1, 11:59pm</strong></p>
 </li>
 </ul>
-</div>
-<div class="section" id="week-2-january-28">
-<h2>Week 2: January 28<a class="headerlink" href="#week-2-january-28" title="Permalink to this headline">¶</a></h2>
-<p><strong>Lectures:</strong></p>
-<ul class="simple">
-<li>Slang Embedded Development Overview (<a class="reference internal" href="lectures.html#lecture-slang-embedded-overview"><span>lecture link</span></a>)</li>
-<li>Introduction to Arduino</li>
-</ul>
-<p><strong>Homework:</strong></p>
+<p><strong>Administration:</strong></p>
 <ul>
-<li><p class="first"><a class="reference external" href="https://k-state.instructure.com/courses/74651/assignments/804992">Setting up the Slang Embedded Development Environment</a></p>
-<p>This assignment covers the basics of translating from AADL to Slang,
-implementing component behaviors in Slang, and then running the
-Slang system in a JVM.  It uses the system modeling framework
-(OSATE/AADL) that we will use to begin modeling on projects in a few
-weeks after we have some lectures introducing more of the details of
-AADL.  <strong>Due February 7, 11:59pm</strong></p>
+<li><p class="first">Student/Instructor meetings (appointments with individual students)</p>
+<p>Students and Instructor will get to know each other and discuss
+possible project topics.</p>
 </li>
 </ul>
 </div>
-<div class="section" id="week-3-february-4">
-<h2>Week 3: February 4<a class="headerlink" href="#week-3-february-4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-2-february-1">
+<h2>Week 2: February 1<a class="headerlink" href="#week-2-february-1" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>AADL Overview</li>
-<li>Slang Embedded Development</li>
+<li>AADL/HAMR Workflow Overview (what you typically do in AADL when using HAMR)</li>
+<li>AADL: Modeling Embedded Software</li>
+<li>AADL: Computational Paradigm as viewed by HAMR</li>
+<li>AADL: Software Model - HAMR Linting</li>
 </ul>
 <p><strong>Homework:</strong></p>
 <ul>
-<li><p class="first"><a class="reference external" href="https://k-state.instructure.com/courses/74651/assignments/806511">Prototyping the Temperature Controller Circuit with Arduino</a></p>
-<p>In this assignment, you will build and test a simple circuit to
-simulate the hardware of the temperature controller example.   We&#8217;ve
-already a lot of this work in class already.  The main point is to
-build the circuit with the red LED (to simulate the heater/fan) and
-the potentiometer (to simulate the temperature sensor).  You will
-then test each component individually, then create a simple program
-to simulate the logic of temperature controller example.
-<strong>Due February 14, 11:59pm</strong></p>
+<li><p class="first">AADL: Basic Embedded Software Modeling</p>
+<p>This assignment will cover building simple AADL models of real-time tasks
+with port communication.  <strong>Due February 8, 11:59pm</strong></p>
 </li>
 </ul>
+<p><strong>Administration:</strong></p>
+<ul class="simple">
+<li>Student/Instructor meetings - further discussion of project planning</li>
+</ul>
 </div>
-<div class="section" id="week-4-february-11">
-<h2>Week 4: February 11<a class="headerlink" href="#week-4-february-11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-3-february-8">
+<h2>Week 3: February 8<a class="headerlink" href="#week-3-february-8" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
-<li>Slang Embedded Development (continued)</li>
+<li>HAMR/Slang Overview</li>
+<li>HAMR/Slang APIs for Threading and Port-based Communication</li>
+<li>HAMR/Slang Unit Testing</li>
 </ul>
 <p><strong>Homework:</strong></p>
 <ul>
-<li><p class="first"><a class="reference external" href="https://k-state.instructure.com/courses/74651/assignments/810513">Slang Embedded 02 &#8211; creating components</a></p>
-<p>In this assignment, you will learn more about using the Slang
-Embedded modeling and development that we will use later in the
-course to build our high-assurance embedded systems. This homework
-focuses on helping you design an interface for a new
-component in AADL, generate interface code for the component, and
-program the business logic for the component.
-<strong>Due Friday, February 22, 11:59pm</strong></p>
+<li><p class="first">HAMR/Slang Unit Testing</p>
+<p>This assignment will cover unit testing of AADL/HAMR/Slang periodic and sporadic components.
+with port communication.  <strong>Due February 8, 11:59pm</strong></p>
 </li>
 </ul>
-<p><strong>Notes:</strong></p>
+<p><strong>Administration:</strong></p>
 <ul class="simple">
-<li>Dr. Hatcliff traveling to AADL committee meeting and demo</li>
+<li>Student/Instructor meetings - project proposals</li>
 </ul>
 </div>
-<div class="section" id="week-5-february-18">
-<h2>Week 5: February 18<a class="headerlink" href="#week-5-february-18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-4-february-15">
+<h2>Week 4: February 15<a class="headerlink" href="#week-4-february-15" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
-<li>AADL Concepts &#8211; Port-based Communication</li>
-<li>FreeRTOS and STM32 development</li>
+<li>Isolette Overview</li>
+<li>Isolette Code Walkthrough</li>
+<li>System Theory and Control Loop Concepts (<a class="reference internal" href="lectures.html#lecture-intro-control-loops-temp-controller"><span>lecture link</span></a>)</li>
+</ul>
+<p><strong>Homework:</strong></p>
+<ul>
+<li><p class="first">Isolette - Code Review and Execution</p>
+<p>In this assignment, you will learn about the Isolette
+system as implemented in Slang, how to make some simple changes
+to the code, and how to execute the system.
+<strong>Due February 22, 11:59pm</strong></p>
+</li>
+</ul>
+<p><strong>Administration:</strong></p>
+<ul class="simple">
+<li>Student/Instructor meetings - project discussions</li>
+</ul>
+</div>
+<div class="section" id="week-5-february-22">
+<h2>Week 5: February 22<a class="headerlink" href="#week-5-february-22" title="Permalink to this headline">¶</a></h2>
+<p>Project Phase I class reports</p>
+<p><strong>Lectures:</strong></p>
+<p>(no lectures &#8211; only class meetings about projects)</p>
+<p><strong>Homework:</strong></p>
+<p>(no homework)</p>
+</div>
+<div class="section" id="week-6-march-1">
+<h2>Week 6: March 1<a class="headerlink" href="#week-6-march-1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Lectures:</strong></p>
+<ul class="simple">
+<li>AADL Flow Specifications</li>
+<li>HAMR: Awas Basic Information Flow Querying and Visualization</li>
+<li>HAMR: Inspector framework</li>
+</ul>
+<p><strong>Homework:</strong></p>
+<ul>
+<li><p class="first">AADL Flow Specs and Awas Information Flow</p>
+<p>In this assignment, you will add AADL flow annotations to models
+use the Awas tools to visualize and query information flows.
+<strong>Due March 8, 11:59pm</strong></p>
+</li>
+<li><p class="first">AADL Inspector Framework</p>
+<p>In this assignment, you will add use the HAMR Inspector Framework
+for understanding the behaviors of HAMR-built systems as they execute.
+<strong>Due March 8, 11:59pm</strong></p>
+</li>
+</ul>
+<p><strong>Administration:</strong></p>
+<ul class="simple">
+<li>Student/Instructor meetings - project discussions</li>
+</ul>
+</div>
+<div class="section" id="week-7-march-8">
+<h2>Week 7: March 8<a class="headerlink" href="#week-7-march-8" title="Permalink to this headline">¶</a></h2>
+<p><strong>Lectures:</strong></p>
+<ul class="simple">
+<li>HAMR: Slang Extensions</li>
+<li>HAMR: Slang/Scala/Java - Swing User Interfaces for HAMR</li>
 </ul>
 <p><strong>Homework:</strong></p>
 <ul class="simple">
-<li>Using FreeRTOS and STM 32 boards to control the Temperature Control
-Hardware</li>
+<li>Slang extensions and UI implementation  <strong>Due February 82211:59pm</strong></li>
+</ul>
+<p><strong>Administration:</strong></p>
+<ul class="simple">
+<li>Student/Instructor meetings - project discussions</li>
 </ul>
 </div>
-<div class="section" id="week-6-february-25">
-<h2>Week 6: February 25<a class="headerlink" href="#week-6-february-25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-8-march-15">
+<h2>Week 8: March 15<a class="headerlink" href="#week-8-march-15" title="Permalink to this headline">¶</a></h2>
+<p>Project Phase I class reports</p>
+<p><strong>Lectures:</strong></p>
+<p>(no lectures &#8211; only class meetings about projects)</p>
+<p><strong>Homework:</strong></p>
+<p>(no homework)</p>
+</div>
+<div class="section" id="week-9-march-22-spring-break-no-classes">
+<h2>Week 9: March 22 &#8211; &#8220;Spring Break&#8221; &#8211; no classes<a class="headerlink" href="#week-9-march-22-spring-break-no-classes" title="Permalink to this headline">¶</a></h2>
+<p><strong>Lectures:</strong></p>
+<ul class="simple">
+<li>(no classes)</li>
+</ul>
+</div>
+<div class="section" id="week-10-march-29">
+<h2>Week 10: March 29<a class="headerlink" href="#week-10-march-29" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>(to be announced)</li>
 </ul>
 </div>
-<div class="section" id="week-7-march-4">
-<h2>Week 7: March 4<a class="headerlink" href="#week-7-march-4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-11-april-5">
+<h2>Week 11: April 5<a class="headerlink" href="#week-11-april-5" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>(to be announced)</li>
 </ul>
 </div>
-<div class="section" id="spring-break-march-11">
-<h2>Spring Break: March 11<a class="headerlink" href="#spring-break-march-11" title="Permalink to this headline">¶</a></h2>
-<p><em>Have Fun!</em></p>
-</div>
-<div class="section" id="week-8-march-18">
-<h2>Week 8: March 18<a class="headerlink" href="#week-8-march-18" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-12-april-12">
+<h2>Week 12: April 12<a class="headerlink" href="#week-12-april-12" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>(to be announced)</li>
 </ul>
 </div>
-<div class="section" id="week-9-march-25">
-<h2>Week 9: March 25<a class="headerlink" href="#week-9-march-25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-13-april-19">
+<h2>Week 13: April 19<a class="headerlink" href="#week-13-april-19" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>(to be announced)</li>
 </ul>
 </div>
-<div class="section" id="week-10-april-1">
-<h2>Week 10: April 1<a class="headerlink" href="#week-10-april-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-14-april-26">
+<h2>Week 14: April 26<a class="headerlink" href="#week-14-april-26" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>(to be announced)</li>
 </ul>
 </div>
-<div class="section" id="week-11-april-8">
-<h2>Week 11: April 8<a class="headerlink" href="#week-11-april-8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="week-15-may-3">
+<h2>Week 15: May 3<a class="headerlink" href="#week-15-may-3" title="Permalink to this headline">¶</a></h2>
 <p><strong>Lectures:</strong></p>
 <ul class="simple">
 <li>(to be announced)</li>
 </ul>
 </div>
-<div class="section" id="week-12-april-15">
-<h2>Week 12: April 15<a class="headerlink" href="#week-12-april-15" title="Permalink to this headline">¶</a></h2>
-<p><strong>Lectures:</strong></p>
-<ul class="simple">
-<li>(to be announced)</li>
-</ul>
-</div>
-<div class="section" id="week-13-april-22">
-<h2>Week 13: April 22<a class="headerlink" href="#week-13-april-22" title="Permalink to this headline">¶</a></h2>
-<p><strong>Lectures:</strong></p>
-<ul class="simple">
-<li>(to be announced)</li>
-</ul>
-</div>
-<div class="section" id="week-14-april-29">
-<h2>Week 14: April 29<a class="headerlink" href="#week-14-april-29" title="Permalink to this headline">¶</a></h2>
-<p><strong>Lectures:</strong></p>
-<ul class="simple">
-<li>(to be announced)</li>
-</ul>
-</div>
-<div class="section" id="week-15-may-6">
-<h2>Week 15: May 6<a class="headerlink" href="#week-15-may-6" title="Permalink to this headline">¶</a></h2>
-<p><strong>Lectures:</strong></p>
-<ul class="simple">
-<li>(to be announced)</li>
-</ul>
-</div>
-<div class="section" id="finals-may-13">
-<h2>Finals: May 13<a class="headerlink" href="#finals-may-13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="finals-week-may-10">
+<h2>Finals Week: May 10<a class="headerlink" href="#finals-week-may-10" title="Permalink to this headline">¶</a></h2>
 <p><em>We will not have a final, but we will meet to discuss project outcomes</em></p>
 </div>
 </div>
