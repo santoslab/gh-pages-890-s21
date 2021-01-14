@@ -5,7 +5,7 @@ Lectures
 
 .. raw:: html
 
-   <h3>CIS 890: Development of High-Assurance Software Systems</h3>
+   <h3>CIS 855: Development of High-Assurance Software Systems</h3>
 
 
 
@@ -52,50 +52,6 @@ HAMR - A model-driven development environment for embedded systems that uses AAD
 
 (content will appear here throughout the semester)
 
-
-Slang Embedded
-********************************
-
-.. _lecture-slang-embedded-overview:
-
-**Lecture: Slang Embedded Tool Chain Overview**
-
-This lecture presents an overview KSU SAnToS Lab's Slang Embedded tool chain for
-developing high-assurance embedded systems.  The tool includes a
-component modeling and analysis layer based on the AADL modeling framework, code
-generation, development, and simulation using Slang (a safety-critical
-subset of Scala), and code generation to C for various micro-kernel
-and separation platforms.  Other lectures will "drill down" into the
-details of each of the tool chain elements.
-
-* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-slang/slides/Slang-Embedded-Pipeline-Overview.pdf>`__)
-
-STM32 and FreeRTOS
-********************************
-
-.. _lecture-stm32-tool-chain-installation:
-
-**Exercise: STM32 Tool Chain Installation and Blinking LED**
-
-This exercise guides you through the installation of development tools
-for STM32F4 Discovery Boards and construction of a simple FreeRTOS
-task to blink one of the LEDs built into the Discovery  board.
-
-* Exercise (`.pdf <http://www.santoslab.org/pub/high-assurance/module-stm32/CIS890-STM32-Tool-Chain-Installation-and-LED-Blink.pdf>`__)
-
-Arduino
-********************************
-
-.. _lecture-arduino-tutorial-pdf:
-
-**Arduino (Elegoo) Mega 2560 Tutorials**
-
-This 225-page document provides 33 exercises to help you learn how to
-program all of the different widges that come with the Arduino
-(Elegoo) Mega 2560 kit that is required for the course (you can
-purchase the  kit from `Amazon <https://www.amazon.com/gp/product/B01EWNUUUA/ref=ppx_yo_dt_b_asin_title_o01__o00_s00?ie=UTF8&psc=1>`__).
-
-* Tutorial Document (`.pdf <http://www.santoslab.org/pub/high-assurance/module-arduino/Elegoo-Mega-2560-Tutorials.pdf>`__)
 
 
 
@@ -341,3 +297,49 @@ Lectures from Previous Semesters
   <li> Video: (<a href="http://www.santoslab.org/pub/high-assurance/module-map/videos/01-MAP--Intro.mov">.mov)</a></li>
   </ul>
   </ul>
+
+
+Slang Embedded
+********************************
+
+.. _lecture-slang-embedded-overview:
+
+**Lecture: Slang Embedded Tool Chain Overview**
+
+This lecture presents an overview KSU SAnToS Lab's Slang Embedded tool chain for
+developing high-assurance embedded systems.  The tool includes a
+component modeling and analysis layer based on the AADL modeling framework, code
+generation, development, and simulation using Slang (a safety-critical
+subset of Scala), and code generation to C for various micro-kernel
+and separation platforms.  Other lectures will "drill down" into the
+details of each of the tool chain elements.
+
+* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-slang/slides/Slang-Embedded-Pipeline-Overview.pdf>`__)
+
+STM32 and FreeRTOS
+********************************
+
+.. _lecture-stm32-tool-chain-installation:
+
+**Exercise: STM32 Tool Chain Installation and Blinking LED**
+
+This exercise guides you through the installation of development tools
+for STM32F4 Discovery Boards and construction of a simple FreeRTOS
+task to blink one of the LEDs built into the Discovery  board.
+
+* Exercise (`.pdf <http://www.santoslab.org/pub/high-assurance/module-stm32/CIS890-STM32-Tool-Chain-Installation-and-LED-Blink.pdf>`__)
+
+Arduino
+********************************
+
+.. _lecture-arduino-tutorial-pdf:
+
+**Arduino (Elegoo) Mega 2560 Tutorials**
+
+This 225-page document provides 33 exercises to help you learn how to
+program all of the different widges that come with the Arduino
+(Elegoo) Mega 2560 kit that is required for the course (you can
+purchase the  kit from `Amazon <https://www.amazon.com/gp/product/B01EWNUUUA/ref=ppx_yo_dt_b_asin_title_o01__o00_s00?ie=UTF8&psc=1>`__).
+
+* Tutorial Document (`.pdf <http://www.santoslab.org/pub/high-assurance/module-arduino/Elegoo-Mega-2560-Tutorials.pdf>`__)
+

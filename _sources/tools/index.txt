@@ -5,7 +5,7 @@ Tools
 
 .. raw:: html
 
-   <h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3>
+   <h3>CIS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
 
 .. include:: ../def.rst
 
@@ -14,11 +14,15 @@ Tools
 Git 
 *************
 
-(To be announced)
+Course homework submission and projects will be organized through GitHub.  Each student/project will be allocated a Github repository.   To prepare for this, please make sure that you have a github account.
 
 
-Slang Embedded Development
-****************************
+HAMR Model-based Development Framework
+***************************************
 
-(to be announced)
+Sireum HAMR ("[H]igh [A]ssurance [M]odeling and [R]apid engineering for embedded systems'') is a code generation and system build framework for embedded systems whose architecture is specified using the `Architecture Analysis and Design Language <https://www.sei.cmu.edu/our-work/projects/display.cfm?customel_datapageid_4050=191439>`__ (AADL).   For more details, see the HAMR web site: `http://hamr.sireum.org <http://hamr.sireum.org>`__
+
+
+
+
 
