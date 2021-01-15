@@ -23,7 +23,7 @@ The course will cover techniques for developing high assurance systems -- system
 ==================================================  ====================================================================
 **Lectures**                                        Tuesday (T) & Thursday (U), 2:30pm - 3:45pm, |DUE0096|
 **Instructor**                                      `John Hatcliff <http://people.cs.ksu.edu/~hatcliff>`__,
-                                                    Office:       2183 |EngHall|,
+                                                    Office:       2160 |EngHall|,
                                                     Office Hours: By appointment
 ==================================================  ====================================================================
 

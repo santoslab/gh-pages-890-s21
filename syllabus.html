@@ -98,11 +98,11 @@
       
   <div class="section" id="syllabus">
 <span id="id1"></span><h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline">¶</a></h1>
-<h3>CIS 890: Development of High-Assurance Software Systems, Spring 2021</h3><hr class="docutils" />
+<h3>CIS 855: Development of High-Assurance Software Systems, Spring 2021</h3><hr class="docutils" />
 <div class="section" id="purpose">
 <h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
 <p>The course will cover techniques for developing high assurance systems &#8211; systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques &#8211; techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification. The goal of this course teach techniques for developing critical software that would usually not be covered in other courses in your computer science degree program. In particular, the course will focus on writing requirements for safety critical systems, formal architecture definition, risk management techniques including various forms of hazard analysis, safety systems, and automated verification. We will aim to illustrate an end-to-end development process for critical systems using examples of varying size.</p>
-<p>Note:There is not enough time in the course to cover all topics
+<p>Note: There is not enough time in the course to cover all topics
 relevant to safety-critical system development in detail.
 Topics chosen by the instructor in a particular semester will depend on the
 instructor&#8217;s current research activities.</p>
@@ -115,24 +115,10 @@ instructor&#8217;s current research activities.</p>
 sensing, actuating, etc.</li>
 <li>Real-time OS concepts and real-time schedulability analysis based on FreeRTOS</li>
 <li>Modeling embedded systems in AADL</li>
-<li>Developing and simulated real-time embedded systems using the Sireum
-Slang development environment</li>
-<li>Using the Arduino platform for building simple embedded systems</li>
-<li>Using the ARM-based STM32 Discovery boards to build moderate size
-embedded systems</li>
-<li>Applying concepts from above to safety-critical and IoT domains</li>
-</ul>
-<p>Additional topics to be addressed by individual students depending on
-their interests...</p>
-<ul class="simple">
-<li>Integrating the Slang, FreeRTOS, and STM 32 development context to
-support CAN-based communication</li>
-<li>Connecting an embedded system to Amazon Web Services using Amazon&#8217;s
-IoT infrastructure</li>
-<li>Using the hybrid systems annex of AADL to support modeling hybrid
-systems aspects of an embedded system</li>
-<li>Developing Slang libraries for interfacing with sensors/actuators on
-STM32 boards</li>
+<li>Developing and simulated real-time embedded systems using the HAMR
+model-driven development framework</li>
+<li>Extending a HAMR built system with additional capabilities for logging,
+security, testing, and cloud-based interactions.</li>
 </ul>
 </div>
 <div class="section" id="objectives">
@@ -141,13 +127,10 @@ STM32 boards</li>
 course. For Spring 2021, at the end of this course,
 you should be able to demonstrate the following knowledge and skills:</p>
 <ul class="simple">
-<li>Be able to build a simple embedded system using Arduino</li>
-<li>Be able to build a use a development tool-chain for STM32 on a
-realistic embedded systems project</li>
-<li>Be able to use the Slang Embedded tools to model and build embedded
-systems</li>
-<li>Run real-time schedulability analyses on an architectural
-specification of an embedded system</li>
+<li>Understand and explain the utility of model-driven development for embedded systems</li>
+<li>Be able to use AADL to specify the software architecture of a simple real-time embedded system</li>
+<li>Be able to apply the HAMR framework to generate code infrastructure for a simple real-time embedded system</li>
+<li>Be able to use Slang to implement the application component logic for a simple real-time embedded system</li>
 </ul>
 </div>
 <div class="section" id="meeting-times">
@@ -158,7 +141,7 @@ specification of an embedded system</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Time:</th><td class="field-body">Tuedays (T) &amp; Thursdays (U), 2:30pm - 3:45pm</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Place:</th><td class="field-body">DUE3099A (CS Conference Room)</td>
+<tr class="field-even field"><th class="field-name">Place:</th><td class="field-body"><a href="#id2"><span class="problematic" id="id3">|DUE0096|</span></a></td>
 </tr>
 </tbody>
 </table>
@@ -178,20 +161,14 @@ experience with programming and development environments will be helpful.</p>
 <h2>Instructor<a class="headerlink" href="#instructor" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://cs.k-state.edu/~hatcliff">John Hatcliff</a>,
 Office:       2160 <a class="reference external" href="http://www.engg.ksu.edu/engineering-hall/">Engineering Hall</a>,
-Office Hours: 3:45-5:30pm Tuesday and Thursday</p>
-</div>
-<div class="section" id="teaching-assistant">
-<h2>Teaching Assistant<a class="headerlink" href="#teaching-assistant" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Venkat Margapuri</li>
-</ul>
+Office Hours: by appointment</p>
 </div>
 <div class="section" id="grading">
 <h2>Grading<a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Individual Homework Assignments and Quizzes (35%)</li>
-<li>Team Projects (55%)</li>
-<li>Participation (10%)</li>
+<li>Individual Homework Assignments (35%)</li>
+<li>Quizzes (15%)</li>
+<li>Team Projects (50%)</li>
 </ul>
 <p>Final letter grades are assigned based on the following scale:
 90% to earn an A, and 80% to earn a B; 70% to earn a C, and 60% to earn a D.</p>
