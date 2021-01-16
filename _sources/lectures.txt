@@ -12,9 +12,18 @@ Lectures
 Course Administration
 ********************************
 
-**Course Overview**
+**Lecture: Course Administration**
 
-* `Course Administration <http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-00-course-administration-2019.pdf>`__
+This lecture provides a slide-based walkthrough of the course syllabus.  It describes the course policies, means of delivering course content, evaluation methods, grading scale, etc.
+
+* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-00-course-administration-2021.pdf>`__)
+
+**Lecture: Course Overview**
+
+This lecture provides an overview of the course content, homework themes, and course projects. 
+
+* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-00-course-overview-2021.pdf>`__)
+
 
 Safety Critical Systems Concepts
 ********************************
