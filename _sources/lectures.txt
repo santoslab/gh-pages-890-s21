@@ -12,17 +12,19 @@ Lectures
 Course Administration
 ********************************
 
+.. _lecture-course-overview:
+
 **Lecture: Course Administration**
 
 This lecture provides a slide-based walkthrough of the course syllabus.  It describes the course policies, means of delivering course content, evaluation methods, grading scale, etc.
 
-* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-00-course-administration-2021.pdf>`__)
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-intro/slides/INTRO-00-Course-Administration-2021.pdf>`__)
 
 **Lecture: Course Overview**
 
 This lecture provides an overview of the course content, homework themes, and course projects. 
 
-* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-00-course-overview-2021.pdf>`__)
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-intro/slides/INTRO-01-Course-Overview-2021.pdf>`__)
 
 
 Safety Critical Systems Concepts
@@ -44,9 +46,9 @@ actuators (used by the controller to change the state of the
 controlled process in some way).  The lecture briefly discusses how
 requirements engineering and safety reasoning relate to control loops.
 
-* Slides (`.pdf <http://www.santoslab.org/pub/high-assurance/module-intro/slides/INTRO-01-Temp-Control-Control-Loops.pdf>`__)
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-intro/slides/INTRO-01-Temp-Control-Control-Loops.pdf>`__)
 * Study Guide (`.txt
-  <http://www.santoslab.org/pub/high-assurance/module-intro/study-guides/INTRO-01-Temp-Control-Control-Loops-study-guide.txt>`__)
+  <http://pub.santoslab.org/high-assurance/module-intro/study-guides/INTRO-01-Temp-Control-Control-Loops-study-guide.txt>`__)
   
 
 
@@ -59,8 +61,22 @@ AADL
 HAMR - A model-driven development environment for embedded systems that uses AADL
 **********************************************************************************
 
-(content will appear here throughout the semester)
+.. _lecture-hamr-overview:
 
+**Lecture: HAMR Overview (Parts 1, 2, 3)**
+
+This is a three part lecture that provides an overview of the HAMR
+model-driven development tool for AADL (HAMR stands for "High Assurance Modeling and Rapid Engineering for Embedded Systems").
+This lecture should be watched before moving on to other HAMR-related lectures.
+ 
+* Part 1: Provides the overall motivation and scope for HAMR, and covers how HAMR uses AADL.
+* Part 2: Illustrates programming HAMR-generated components/systems in Slang (a high-assurance subset of Scala), which can be integrated with Scala and Java and deployed on the JVM (or alternatively, pure Slang can be compiled to C).  This lecture also illustrates a variety of HAMR/Slang-related capabilities such as unit testing, run-time monitoring, and fault injection.
+* Part 3: Illustrates programming HAMR-generated components/systems in C for deployment on Linux or the seL4 micro-kernel.
+
+
+* Slides (`Part 1 .pdf <http://pub.santoslab.org/high-assurance/module-hamr/slides/HAMR-Overview-Part-1.pdf>`__, `Part 2 .pdf <http://pub.santoslab.org/high-assurance/module-hamr/slides/HAMR-Overview-Part-2.pdf>`__, `Part 3 .pdf <http://pub.santoslab.org/high-assurance/module-hamr/slides/HAMR-Overview-Part-3.pdf>`__)
+
+  
 
 
 
