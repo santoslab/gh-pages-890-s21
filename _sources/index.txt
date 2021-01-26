@@ -1,18 +1,19 @@
 .. toctree::
    :hidden:
 
-   advice
-   schedule
+   
    syllabus
+   lectures
+   schedule
    tools/index
-   polling
+   projects
 
 Home
 ####
 
 .. raw:: html
 
-   <h3>CIS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
+   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
 
 .. include:: def.rst
 
