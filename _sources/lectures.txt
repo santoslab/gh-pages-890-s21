@@ -55,7 +55,16 @@ requirements engineering and safety reasoning relate to control loops.
 AADL
 ********************************
 
-(content will appear here throughout the semester)
+.. _lecture-aadl-overview:
+
+**Lecture: AADL Overview**
+
+This presentation by Dr. Sam Procter from the Software Engineering Institute describes
+AADL, its use in industry, and some of the ongoing research projects that AADL. **NOTE**:  Dr. Procter is
+a PhD graduate from SAnToS Lab/KSU, and he first learned about AADL in this course!
+
+* Video (`YouTube <https://www.youtube.com/watch?v=CTm87h7tyWc&feature=emb_logo>`__)
+  
 
 
 HAMR - A model-driven development environment for embedded systems that uses AADL

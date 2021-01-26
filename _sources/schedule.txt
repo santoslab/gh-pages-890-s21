@@ -40,7 +40,7 @@ Week 2: February 1
     
 **Lectures:**
 
-* AADL Overview
+* AADL Overview (:ref:`lecture link <lecture-aadl-overview>`)
 * AADL/HAMR Workflow Overview (what you typically do in AADL when using HAMR)
 * AADL: Modeling Embedded Software
 * AADL: Computational Paradigm as viewed by HAMR
