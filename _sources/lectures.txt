@@ -86,7 +86,40 @@ This lecture should be watched before moving on to other HAMR-related lectures.
 * Slides (`Part 1 .pdf <http://pub.santoslab.org/high-assurance/module-hamr/slides/HAMR-Overview-Part-1.pdf>`__, `Part 2 .pdf <http://pub.santoslab.org/high-assurance/module-hamr/slides/HAMR-Overview-Part-2-Slang.pdf>`__)
 * Video (`Part 1 .mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Overview-Part-1.mp4>`__, `Part 2 .mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Overview-Part-2-Slang.mp4>`__)
 
-  
+.. _tutorial-installation:
+
+**Tool Tutorial: HAMR Installation**
+
+This video covers installation of the HAMR tool following the options of a direct install (as opposed to the virtual machine option) and using the Formal Methods Integrated Development Environment (FMIDE) customization of the OSATE AADL editor (as opposed to installing HAMR in the "regular" OSATE distribution).  Instructions for other types of installation can be found on the HAMR website.  Also, this video addresses installation of the tools needed for Slang development of HAMR-generated components.  The HAMR website explains how to extend this installation with the tools needed for C development of HAMR-generated components.
+
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Installation.mp4>`__)
+* HAMR `Installation Instructions <http://hamr.sireum.org/hamr-doc/ch0X-hamr-installation.html>`__
+
+.. _tutorial-osate-workspace-concepts:
+
+**Tool Tutorial: AADL OSATE Workspace Concepts**
+
+The OSATE AADL editor is based on Eclipse, and it uses the Eclipse "workspace" concept to manage AADL project files.   This video gives an overview of the workspace concept and recommendations for how to use workspaces in the context of HAMR development.  You should follow these recommendations when working with HAMR AADL models in this tutorial series.
+
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-OSATE-Workspace-Concepts.mp4>`__)
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-OSATE-Workspace-Concepts.pdf>`__)
+
+.. _tutorial-aadl-project-importing:
+
+**Tool Tutorial: Loading an Existing AADL Project into OSATE/FMIDE**
+
+You will often (in the course of these lectures/tutorials or in the course of team development) be given an existing AADL project to work with in the OSATE AADL editor.  This tutorial explains how you load existing AADL projects into OSATE and it illustrates some basic OSATE navigation of an AADL model.
+
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-Importing.mp4>`__)
+* Example Files: `HAMR-Slang-Tutorials-Example-00.zip <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Example-00.zip>`__
+
+.. _tutorial-slang-project-opening:
+
+**Tool Tutorial: Loading an Generated/Existing HAMR Slang Project into the IntelliJ-based Sireum IVE**
+
+Given an AADL model, HAMR can generate a HAMR Slang project with AADL run-time infrastructure and component code skeletons that you add application code to to get a complete system.  This video explains how you open a HAMR Slang project in the Sireum IVE (a customization of IntelliJ).  These instructions also apply to opening existing HAMR Slang projects that are distributed in the HAMR Slang tutorials.   The tutorial addresses the basic structure of HAMR Slang projects, notes the use of the Scala Build Tool (SBT) to manage project builds, describes basic correspondences between HAMR generated Slang code and AADL models, describes how to compile and run a HAMR Slang project, how to run unit tests.  The tutorial concludes with an initial discussion of project files that should be not checked into git and other source code repositories.  
+
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-Opening.mp4>`__)
 
 
 
