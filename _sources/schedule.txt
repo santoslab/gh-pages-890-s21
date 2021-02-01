@@ -26,7 +26,10 @@ Week 1: January 25
 
   This assignment will guide you through the process of setting up 
   HAMR as it will be used for the first several assignments.
-  **Due February 1, 11:59pm**
+
+  Link to `Canvas assignment <https://k-state.instructure.com/courses/105841/assignments/1258520>`__
+
+  **Due February 3, 11:59pm**
 
 **Administration:**
 
@@ -41,9 +44,8 @@ Week 2: February 1
 **Lectures:**
 
 * AADL Overview (:ref:`lecture link <lecture-aadl-overview>`)
-* AADL/HAMR Workflow Overview (what you typically do in AADL when using HAMR)
-* AADL: Modeling Embedded Software
-* AADL: Computational Paradigm as viewed by HAMR
+* AADL: Modeling Embedded Software (to be released later in the week)
+* AADL: Computational Paradigm as viewed by HAMR (to be released later in the week)
 
 **Homework:**
 
