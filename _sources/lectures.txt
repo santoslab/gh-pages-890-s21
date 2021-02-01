@@ -120,7 +120,7 @@ You will often (in the course of these lectures/tutorials or in the course of te
 Given an AADL model, HAMR can generate a HAMR Slang project with AADL run-time infrastructure and component code skeletons that you add application code to to get a complete system.  This video explains how you open a HAMR Slang project in the Sireum IVE (a customization of IntelliJ).  These instructions also apply to opening existing HAMR Slang projects that are distributed in the HAMR Slang tutorials.   The tutorial addresses the basic structure of HAMR Slang projects, notes the use of the Scala Build Tool (SBT) to manage project builds, describes basic correspondences between HAMR generated Slang code and AADL models, describes how to compile and run a HAMR Slang project, how to run unit tests.  The tutorial concludes with an initial discussion of project files that should be not checked into git and other source code repositories.  
 
 * Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-Opening.mp4>`__)
-
+* Example Files: Use HAMR-Slang-Tutorials-Example-00.zip from above.  If you have already downloaded, no need to download again.
 
 
 ----
