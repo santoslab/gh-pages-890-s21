@@ -63,6 +63,7 @@ Week 3: February 8
     
 **Lectures:**
 
+* Basic Control Loop Concepts (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
 * HAMR/Slang Overview
 * HAMR/Slang APIs for Threading and Port-based Communication
 * HAMR/Slang Unit Testing
