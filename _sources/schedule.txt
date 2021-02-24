@@ -44,8 +44,8 @@ Week 2: February 1
 **Lectures:**
 
 * AADL Overview (:ref:`lecture link <lecture-aadl-overview>`)
-* AADL: Modeling Embedded Software (to be released later in the week)
-* AADL: Computational Paradigm as viewed by HAMR (to be released later in the week)
+* AADL: Modeling Embedded Software (:ref:`lecture link <lecture-aadl-modeling-software>`)
+* AADL: Computational Paradigm as viewed by HAMR 
 
 **Homework:**
 

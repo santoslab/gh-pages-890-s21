@@ -67,6 +67,14 @@ a PhD graduate from SAnToS Lab/KSU, and he first learned about AADL in this cour
 * Video (`YouTube <https://www.youtube.com/watch?v=CTm87h7tyWc&feature=emb_logo>`__)
   
 
+.. _lecture-aadl-modeling-software:
+
+**Lecture: AADL: Modeling Embedded Software**
+
+This lecture covers the basic aspects of modeling embedded software with AADL using the temperature controller example.  The lecture includes concepts related to AADL thread, process, and system components, AADL port-based communication, and AADL packages.  The lecture scope is tailored to the subset of AADL supported by HAMR code generation.  This material provides the basis for follow-on tool tutorials that use the AADL OSATE environment to develop simple system software models.
+
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/slides/HAMR-AADL-Modeling-Software.pdf>`__)
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-AADL-Modeling-Software.mp4>`__)
 
 HAMR - A model-driven development environment for embedded systems that uses AADL
 **********************************************************************************
@@ -127,7 +135,7 @@ Given an AADL model, HAMR can generate a HAMR Slang project with AADL run-time i
 
 This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
 
-In this exercise, you will carry out a simple refactoring of some of the component ports in the Temperature Control example.  You will start from the AADL model in the HAMR-Slang-Tutorials-Example-00.zip that you imported into OSATE in the steps above.   This refactoring will involve changing the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface). This will require changing the AADL thread component types for TempSensor , TempController , and OperatorInterface components, as well as making some simple changes to corresponding AADL flow specifications. By performing this refactoring, you will gain an initial understanding of
+In this exercise, you will carry out a simple refactoring of some of the component ports in the Temperature Control example.  You will start from the AADL model in the HAMR-Slang-Tutorials-Example-00.zip that you imported into OSATE in the tutorials above.   This refactoring will involve changing the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface). This will require changing the AADL thread component types for TempSensor , TempController , and OperatorInterface components, as well as making some simple changes to corresponding AADL flow specifications. By performing this refactoring, you will gain an initial understanding of
 (a) AADL architecture models (basic ideas of ports and connections) and (b) using the OSATE editor to make simple edits in the AADL graphical and textual views.
 
 * Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Refactor.pdf>`__)
