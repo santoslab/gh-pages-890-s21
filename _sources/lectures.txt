@@ -131,6 +131,8 @@ Given an AADL model, HAMR can generate a HAMR Slang project with AADL run-time i
 * Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-Opening.mp4>`__)
 * Example Files: Use HAMR-Slang-Tutorials-Example-00.zip from above.  If you have already downloaded, no need to download again.
 
+.. _tutorial-aadl-refactoring:
+
 **Tool Exercise: Refactoring an AADL Model to Remove Ports and Change Port Categories**
 
 This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
@@ -142,6 +144,32 @@ In this exercise, you will carry out a simple refactoring of some of the compone
 * Example Files: Use the OSATE import of the HAMR-Slang-Tutorials-Example-00.zip from above.  
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Refactor.mp4>`__)
 
+.. _tutorial-aadl-project-from-scratch:
+
+**Tool Exercise: Creating an AADL Model from Scratch**
+
+This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
+
+In this exercise, you will create an AADL model of a simple producer/consumer system.  This will cover creation of AADL packages (with imports), threads, processes, systems, and a struct-based data type.   The solution video also illustrates the OSATE content assist facility and creation of AADL graphical model diagrams from the completed textual model.  
+
+To assist you in completing this exercise and subsequent AADL modeling activities, you are provided with a collection of AADL templates (in a text file) that you can cut/paste into OSATE using your favorite text editor.
+
+* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.pdf>`__)
+* AADL Template File: (`.txt <http://pub.santoslab.org/high-assurance/module-hamr/videos/AADL-HAMR-templates-manual.txt>`__)
+* Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.mp4>`__)
+
+  * 0:00 - Overview
+  * 7:43 File System - HAMR Project Directory Hierarchy Creation
+  * 11:52 OSATE - AADL New Project Creation
+  * 16:39 Discussion: Top-down vs Bottom-up Model Creation
+  * 18:22 OSATE - Creation of Producer Package Skeleton
+  * 27:04 OSATE - Creation of ProdCons (system-level) Package and Message Data Type
+  * 32:50 OSATE - Creation of Producer Artifacts
+  * 37:55 Discussion: OSATE Content Assist
+  * 50:05 OSATE - Creation of Consumer Artifacts
+  * 56:00 OSATE - Creation of System Component
+  * 1:01:45 OSATE - Instance Model Creation
+  * 1:03:48 OSATE - Diagram Creation
 
 ----
 
