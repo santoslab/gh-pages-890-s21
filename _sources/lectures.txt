@@ -171,6 +171,34 @@ To assist you in completing this exercise and subsequent AADL modeling activitie
   * 1:01:45 OSATE - Instance Model Creation
   * 1:03:48 OSATE - Diagram Creation
 
+**Tool Exercise: Refactoring a Slang Implementation of an AADL System**
+
+This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
+
+This exercise is designed to help you learn the basics of using HAMR to generate Slang implementations of AADL-based systems, Slang thread component application logic, and Slang port-communication APIs.
+
+In this exercise, you will carry out a simple refactoring of some of the Slang application code in the Temperature Control example.  This builds on a refactoring of the original Temperature Control AADL model carried out in a previous exercise.  In that exercise you changed the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface).  In this exercise, you will regenerate the Slang code from the refactored AADL model.  This will keep most of the existing code, but it will change the Slang APIs associated with your component ports to align with the refactored models.   This will leave the Slang code with some syntax errors because the old application code will not completely match the newly regenerated APIs for port communication.   To address this, you will then need to make some small changes in the Slang component application code to match the new version of the generated port APIs.  You will confirm that your refactored code is working correctly by compiling and running it with the SBT build file in IntelliJ.
+
+This exercise is meant to start from the state of your AADL models and Slang code from previous exercises.  However, if you don't have your files in a proper state, the .zip file below contains both AADL models and Slang code in the correct state for starting the exercise.  You will need to import these files into OSATE and Sireum IVE (see the exercise description).
+
+* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.pdf>`__)
+* .zip file artifacts starting point: (`.zip <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Example-00-AADL-Refactored.zip>`__)
+* Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.mp4>`__)
+
+  * 0:00 - Overview
+  * 21:26 - Code Generation
+  * 30:06 - Compile and Observe Errors
+  * 32:38 - Refactor the TempSensor Initialize Entry Point Code
+  * 35:46 - Refactor the TempSensor Compute Entry Point Code
+  * 39:48 - Recompile and Observe Errors (some eliminated)
+  * 40:37 - Refactor the Message Handlers in the TempControl Compute Entry Point
+  * 51:25 - Recompile and Observe Errors (more eliminated)
+  * 52:08 - Refactor the OperatorInterface Compute Entry Point
+  * 58:32 - Recompile (No Errors)
+  * 59:20 - Refactor TempControl Unit Tests
+  * 1:03:25 - Run Unit Tests
+  * 1:06:39 - Run System
+
 ----
 
 Lectures from Previous Semesters
