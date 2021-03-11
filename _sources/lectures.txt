@@ -144,32 +144,7 @@ In this exercise, you will carry out a simple refactoring of some of the compone
 * Example Files: Use the OSATE import of the HAMR-Slang-Tutorials-Example-00.zip from above.  
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Refactor.mp4>`__)
 
-.. _tutorial-aadl-project-from-scratch:
-
-**Tool Exercise: Creating an AADL Model from Scratch**
-
-This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
-
-In this exercise, you will create an AADL model of a simple producer/consumer system.  This will cover creation of AADL packages (with imports), threads, processes, systems, and a struct-based data type.   The solution video also illustrates the OSATE content assist facility and creation of AADL graphical model diagrams from the completed textual model.  
-
-To assist you in completing this exercise and subsequent AADL modeling activities, you are provided with a collection of AADL templates (in a text file) that you can cut/paste into OSATE using your favorite text editor.
-
-* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.pdf>`__)
-* AADL Template File: (`.txt <http://pub.santoslab.org/high-assurance/module-hamr/videos/AADL-HAMR-templates-manual.txt>`__)
-* Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.mp4>`__)
-
-  * 0:00 - Overview
-  * 7:43 File System - HAMR Project Directory Hierarchy Creation
-  * 11:52 OSATE - AADL New Project Creation
-  * 16:39 Discussion: Top-down vs Bottom-up Model Creation
-  * 18:22 OSATE - Creation of Producer Package Skeleton
-  * 27:04 OSATE - Creation of ProdCons (system-level) Package and Message Data Type
-  * 32:50 OSATE - Creation of Producer Artifacts
-  * 37:55 Discussion: OSATE Content Assist
-  * 50:05 OSATE - Creation of Consumer Artifacts
-  * 56:00 OSATE - Creation of System Component
-  * 1:01:45 OSATE - Instance Model Creation
-  * 1:03:48 OSATE - Diagram Creation
+.. _tutorial-slang-refactoring:
 
 **Tool Exercise: Refactoring a Slang Implementation of an AADL System**
 
@@ -198,6 +173,68 @@ This exercise is meant to start from the state of your AADL models and Slang cod
   * 59:20 - Refactor TempControl Unit Tests
   * 1:03:25 - Run Unit Tests
   * 1:06:39 - Run System
+
+
+.. _tutorial-aadl-project-from-scratch:
+
+**Tool Exercise: Creating an AADL Model from Scratch**
+
+This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
+
+In this exercise, you will create an AADL model of a simple producer/consumer system.  This will cover creation of AADL packages (with imports), threads, processes, systems, and a struct-based data type.   The solution video also illustrates the OSATE content assist facility and creation of AADL graphical model diagrams from the completed textual model.  
+
+To assist you in completing this exercise and subsequent AADL modeling activities, you are provided with a collection of AADL templates (in a text file) that you can cut/paste into OSATE using your favorite text editor.
+
+* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.pdf>`__)
+* AADL Template File: (`.txt <http://pub.santoslab.org/high-assurance/module-hamr/videos/AADL-HAMR-templates-manual.txt>`__)
+* Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.mp4>`__)
+
+  * 0:00 - Overview
+  * 7:43 File System - HAMR Project Directory Hierarchy Creation
+  * 11:52 OSATE - AADL New Project Creation
+  * 16:39 Discussion: Top-down vs Bottom-up Model Creation
+  * 18:22 OSATE - Creation of Producer Package Skeleton
+  * 27:04 OSATE - Creation of ProdCons (system-level) Package and Message Data Type
+  * 32:50 OSATE - Creation of Producer Artifacts
+  * 37:55 Discussion: OSATE Content Assist
+  * 50:05 OSATE - Creation of Consumer Artifacts
+  * 56:00 OSATE - Creation of System Component
+  * 1:01:45 OSATE - Instance Model Creation
+  * 1:03:48 OSATE - Diagram Creation
+
+
+.. _tutorial-slang-project-from-scratch:
+
+**Tool Exercise: Creating a HAMR Slang Project from Scratch**
+
+This is an *exercise* designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.  
+
+In the previous exercise "Creating an AADL Model from Scratch", you created an AADL model of a simple producer/consumer system.  In this exercise, you will build a Slang-based implementation of the system that will run on the JVM.  This will help you learn how to prepare your directory structure for HAMR Slang code generation, invoke the HAMR code generator to generate Slang code from an AADL model, code simple application logic (for the Producer and Consumer threads, in this example), and compile and run the system.
+
+This exercise is meant to start from the state of your AADL models in the previous "Creating an AADL Model from Scratch" exercise.  However, if you don't have your files in a proper state, the HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip file below contains  AADL Producer/Consumer model (essentially the model-solution for the previous exercise).  These are in the correct state for starting the exercise.  You will need to import these files into OSATE following the steps that you took in the exercise "Loading an Existing AADL Project into OSATE/FMIDE".
+
+* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-from-Scratch.pdf>`__)
+* .zip file artifacts starting point: (`.zip <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip>`__)
+* Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-from-Scratch.mp4>`__)
+
+  * 0:00 - Overview, Background, and Preparation
+  * 4:10 - Ensure that the file system has the proper structure for a HAMR Slang project
+  * 6:43 - Confirm AADL Model is Ready for Slang Code Generation
+  * 8:03 - Generate Code (and explanation of structure of HAMR Slang generated code (around 13:22))
+  * 17:58 - Open Slang Project in the Sireum IVE (IntelliJ)
+  * 20:42 - Compile
+  * 22:40 - Run Skeleton Code
+  * 23:50 - Discussion: Explanation of Behavior of Skeleton Code (with intuition about AADL semantics)
+  * 32:37 - Provide Slang Declarations of Producer Component Local State Variables (with discussion about understanding/using the Slang types generated from AADL types)
+  * 47:25 - Implement Producer Initialize Entry Point (with discussion of calling constructors for Slang representations of AADL-derived types, using output port APIs, using Slang if-statements)
+  * 54:04 - Implement Producer Compute Entry Point
+  * Compile and Run
+  * Provide Slang Declarations of Consumer Component Local State Variables
+  * Implement Consumer Initialize Entry Point
+  * Implement Consumer Compute Entry Point
+  * Compile and Run
+  * Conclusion
+
 
 ----
 

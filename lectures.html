@@ -193,6 +193,31 @@ This lecture should be watched before moving on to other HAMR-related lectures.<
 <li>Example Files: Use the OSATE import of the HAMR-Slang-Tutorials-Example-00.zip from above.</li>
 <li>Solution explanation video: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Refactor.mp4">.mp4</a>)</li>
 </ul>
+<p id="tutorial-slang-refactoring"><strong>Tool Exercise: Refactoring a Slang Implementation of an AADL System</strong></p>
+<p>This is an <em>exercise</em> designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
+<p>This exercise is designed to help you learn the basics of using HAMR to generate Slang implementations of AADL-based systems, Slang thread component application logic, and Slang port-communication APIs.</p>
+<p>In this exercise, you will carry out a simple refactoring of some of the Slang application code in the Temperature Control example.  This builds on a refactoring of the original Temperature Control AADL model carried out in a previous exercise.  In that exercise you changed the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface).  In this exercise, you will regenerate the Slang code from the refactored AADL model.  This will keep most of the existing code, but it will change the Slang APIs associated with your component ports to align with the refactored models.   This will leave the Slang code with some syntax errors because the old application code will not completely match the newly regenerated APIs for port communication.   To address this, you will then need to make some small changes in the Slang component application code to match the new version of the generated port APIs.  You will confirm that your refactored code is working correctly by compiling and running it with the SBT build file in IntelliJ.</p>
+<p>This exercise is meant to start from the state of your AADL models and Slang code from previous exercises.  However, if you don&#8217;t have your files in a proper state, the .zip file below contains both AADL models and Slang code in the correct state for starting the exercise.  You will need to import these files into OSATE and Sireum IVE (see the exercise description).</p>
+<ul class="simple">
+<li>Exercise instructions (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.pdf">.pdf</a>)</li>
+<li>.zip file artifacts starting point: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Example-00-AADL-Refactored.zip">.zip</a>)</li>
+<li>Solution explanation video: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.mp4">.mp4</a>)<ul>
+<li>0:00 - Overview</li>
+<li>21:26 - Code Generation</li>
+<li>30:06 - Compile and Observe Errors</li>
+<li>32:38 - Refactor the TempSensor Initialize Entry Point Code</li>
+<li>35:46 - Refactor the TempSensor Compute Entry Point Code</li>
+<li>39:48 - Recompile and Observe Errors (some eliminated)</li>
+<li>40:37 - Refactor the Message Handlers in the TempControl Compute Entry Point</li>
+<li>51:25 - Recompile and Observe Errors (more eliminated)</li>
+<li>52:08 - Refactor the OperatorInterface Compute Entry Point</li>
+<li>58:32 - Recompile (No Errors)</li>
+<li>59:20 - Refactor TempControl Unit Tests</li>
+<li>1:03:25 - Run Unit Tests</li>
+<li>1:06:39 - Run System</li>
+</ul>
+</li>
+</ul>
 <p id="tutorial-aadl-project-from-scratch"><strong>Tool Exercise: Creating an AADL Model from Scratch</strong></p>
 <p>This is an <em>exercise</em> designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
 <p>In this exercise, you will create an AADL model of a simple producer/consumer system.  This will cover creation of AADL packages (with imports), threads, processes, systems, and a struct-based data type.   The solution video also illustrates the OSATE content assist facility and creation of AADL graphical model diagrams from the completed textual model.</p>
@@ -216,28 +241,31 @@ This lecture should be watched before moving on to other HAMR-related lectures.<
 </ul>
 </li>
 </ul>
-<p><strong>Tool Exercise: Refactoring a Slang Implementation of an AADL System</strong></p>
+<p id="tutorial-slang-project-from-scratch"><strong>Tool Exercise: Creating a HAMR Slang Project from Scratch</strong></p>
 <p>This is an <em>exercise</em> designed for you to complete on your own following the provided instructions.  A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
-<p>This exercise is designed to help you learn the basics of using HAMR to generate Slang implementations of AADL-based systems, Slang thread component application logic, and Slang port-communication APIs.</p>
-<p>In this exercise, you will carry out a simple refactoring of some of the Slang application code in the Temperature Control example.  This builds on a refactoring of the original Temperature Control AADL model carried out in a previous exercise.  In that exercise you changed the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface).  In this exercise, you will regenerate the Slang code from the refactored AADL model.  This will keep most of the existing code, but it will change the Slang APIs associated with your component ports to align with the refactored models.   This will leave the Slang code with some syntax errors because the old application code will not completely match the newly regenerated APIs for port communication.   To address this, you will then need to make some small changes in the Slang component application code to match the new version of the generated port APIs.  You will confirm that your refactored code is working correctly by compiling and running it with the SBT build file in IntelliJ.</p>
-<p>This exercise is meant to start from the state of your AADL models and Slang code from previous exercises.  However, if you don&#8217;t have your files in a proper state, the .zip file below contains both AADL models and Slang code in the correct state for starting the exercise.  You will need to import these files into OSATE and Sireum IVE (see the exercise description).</p>
+<p>In the previous exercise &#8220;Creating an AADL Model from Scratch&#8221;, you created an AADL model of a simple producer/consumer system.  In this exercise, you will build a Slang-based implementation of the system that will run on the JVM.  This will help you learn how to prepare your directory structure for HAMR Slang code generation, invoke the HAMR code generator to generate Slang code from an AADL model, code simple application logic (for the Producer and Consumer threads, in this example), and compile and run the system.</p>
+<p>This exercise is meant to start from the state of your AADL models in the previous &#8220;Creating an AADL Model from Scratch&#8221; exercise.  However, if you don&#8217;t have your files in a proper state, the HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip file below contains  AADL Producer/Consumer model (essentially the model-solution for the previous exercise).  These are in the correct state for starting the exercise.  You will need to import these files into OSATE following the steps that you took in the exercise &#8220;Loading an Existing AADL Project into OSATE/FMIDE&#8221;.</p>
 <ul class="simple">
-<li>Exercise instructions (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.pdf">.pdf</a>)</li>
-<li>.zip file artifacts starting point: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Example-00-AADL-Refactored.zip">.zip</a>)</li>
-<li>Solution explanation video: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.mp4">.mp4</a>)<ul>
-<li>0:00 - Overview</li>
-<li>21:26 - Code Generation</li>
-<li>30:06 - Compile and Observe Errors</li>
-<li>32:38 - Refactor the TempSensor Initialize Entry Point Code</li>
-<li>35:46 - Refactor the TempSensor Compute Entry Point Code</li>
-<li>39:48 - Recompile and Observe Errors (some eliminated)</li>
-<li>40:37 - Refactor the Message Handlers in the TempControl Compute Entry Point</li>
-<li>51:25 - Recompile and Observe Errors (more eliminated)</li>
-<li>52:08 - Refactor the OperatorInterface Compute Entry Point</li>
-<li>58:32 - Recompile (No Errors)</li>
-<li>59:20 - Refactor TempControl Unit Tests</li>
-<li>1:03:25 - Run Unit Tests</li>
-<li>1:06:39 - Run System</li>
+<li>Exercise instructions (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-from-Scratch.pdf">.pdf</a>)</li>
+<li>.zip file artifacts starting point: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip">.zip</a>)</li>
+<li>Solution explanation video: (<a class="reference external" href="http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-from-Scratch.mp4">.mp4</a>)<ul>
+<li>0:00 - Overview, Background, and Preparation</li>
+<li>4:10 - Ensure that the file system has the proper structure for a HAMR Slang project</li>
+<li>6:43 - Confirm AADL Model is Ready for Slang Code Generation</li>
+<li>8:03 - Generate Code (and explanation of structure of HAMR Slang generated code (around 13:22))</li>
+<li>17:58 - Open Slang Project in the Sireum IVE (IntelliJ)</li>
+<li>20:42 - Compile</li>
+<li>22:40 - Run Skeleton Code</li>
+<li>23:50 - Discussion: Explanation of Behavior of Skeleton Code (with intuition about AADL semantics)</li>
+<li>32:37 - Provide Slang Declarations of Producer Component Local State Variables (with discussion about understanding/using the Slang types generated from AADL types)</li>
+<li>47:25 - Implement Producer Initialize Entry Point (with discussion of calling constructors for Slang representations of AADL-derived types, using output port APIs, using Slang if-statements)</li>
+<li>54:04 - Implement Producer Compute Entry Point</li>
+<li>Compile and Run</li>
+<li>Provide Slang Declarations of Consumer Component Local State Variables</li>
+<li>Implement Consumer Initialize Entry Point</li>
+<li>Implement Consumer Compute Entry Point</li>
+<li>Compile and Run</li>
+<li>Conclusion</li>
 </ul>
 </li>
 </ul>
