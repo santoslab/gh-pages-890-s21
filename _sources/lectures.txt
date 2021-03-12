@@ -225,15 +225,15 @@ This exercise is meant to start from the state of your AADL models in the previo
   * 20:42 - Compile
   * 22:40 - Run Skeleton Code
   * 23:50 - Discussion: Explanation of Behavior of Skeleton Code (with intuition about AADL semantics)
-  * 32:37 - Provide Slang Declarations of Producer Component Local State Variables (with discussion about understanding/using the Slang types generated from AADL types)
-  * 47:25 - Implement Producer Initialize Entry Point (with discussion of calling constructors for Slang representations of AADL-derived types, using output port APIs, using Slang if-statements)
-  * 54:04 - Implement Producer Compute Entry Point
-  * Compile and Run
-  * Provide Slang Declarations of Consumer Component Local State Variables
-  * Implement Consumer Initialize Entry Point
-  * Implement Consumer Compute Entry Point
-  * Compile and Run
-  * Conclusion
+  * 32:37 - Provide Slang Declarations of Producer Component Local State Variables (with discussion about understanding/using the Slang types generated from AADL types, special formatting of literals)
+  * 47:25 - Implement Producer Initialize Entry Point (with discussion of standard structure for initialize entry point: initializing component local variables, and putting initial values on output data ports)
+  * 54:04 - Implement Producer Compute Entry Point (with discussion of calling constructors for Slang representations of AADL-derived types, using output port APIs, using Slang if-statements, other AADL entry points)
+  * 1:09:08 - Compile and Run (with explanation of logging output when we have a completed producer but are still using the auto-generated template for the consumer)
+  * 1:12:43 - Provide Slang Declarations of Consumer Component Local State Variables
+  * 1:15:18 - Implement Consumer Initialize Entry Point
+  * 1:15:57 - Implement Consumer Compute Entry Point (with a discussion of the semantics of AADL HAMR event handlers around 1:17:45, discussion of example API usage 1:20:54, discussion of coding the entry point 1:22:50)
+  * 1:29:17 - Compile and Run (with a discussion of understanding the output of the completed system)
+  * 1:31:37 - Conclusion
 
 
 ----
