@@ -161,18 +161,21 @@ This exercise is meant to start from the state of your AADL models and Slang cod
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.mp4>`__)
 
   * 0:00 - Overview
-  * 21:26 - Code Generation
-  * 30:06 - Compile and Observe Errors
-  * 32:38 - Refactor the TempSensor Initialize Entry Point Code
-  * 35:46 - Refactor the TempSensor Compute Entry Point Code
-  * 39:48 - Recompile and Observe Errors (some eliminated)
-  * 40:37 - Refactor the Message Handlers in the TempControl Compute Entry Point
-  * 51:25 - Recompile and Observe Errors (more eliminated)
-  * 52:08 - Refactor the OperatorInterface Compute Entry Point
-  * 58:32 - Recompile (No Errors)
-  * 59:20 - Refactor TempControl Unit Tests
-  * 1:03:25 - Run Unit Tests
-  * 1:06:39 - Run System
+  * 15:23 - Loading AADL and Slang projects from provide zip file (optional -- only needed if you are not starting from the results of previous exercises)
+  * 19:48 - Confirming code is ready for exercise; hints about what will change in code; building existing project before refactoring
+  * 23:04 - Explanation of how code generation avoids overwriting existing application files but does generate new infrastructure files
+  * 26:06 - Code Generation
+  * 38:54 - Compile and Observe Errors
+  * 40:42 - Refactor the TempSensor Compute Entry Point Code
+  * 44:30 - Refactor the TempSensor Initialize Entry Point Code
+  * 48:18 - Recompile and Observe Errors (some eliminated)
+  * 45:50 - Refactor the Message Handlers in the TempControl Compute Entry Point
+  * 55:55 - Recompile and Observe Errors (more eliminated)
+  * 57:20 - Refactor the OperatorInterface Compute Entry Point
+  * 59:08 - Recompile (No Errors)
+  * 59:50 - Refactor TempControl Unit Tests
+  * 1:03:40 - Run Unit Tests
+  * 1:04:40 - Run System
 
 
 .. _tutorial-aadl-project-from-scratch:
