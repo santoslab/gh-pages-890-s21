@@ -13,7 +13,7 @@ Home
 
 .. raw:: html
 
-   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
+   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2024</h3>
 
 .. include:: def.rst
 
@@ -22,7 +22,7 @@ Home
 The course will cover techniques for developing high assurance systems -- systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques -- techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification. The goal of this course teach techniques for developing critical software that would usually not be covered in other courses in your computer science degree program. In particular, the course will focus on writing requirements for safety critical systems, formal architecture definition, risk management techniques including various forms of hazard analysis, safety systems, and automated verification. We will aim to illustrate an end-to-end development process for critical systems using examples of varying size.
     
 ==================================================  ====================================================================
-**Lectures**                                        Tuesday (T) & Thursday (U), 2:30pm - 3:45pm, |DUE0096|
+**Lectures**                                        Tuesday (T) & Thursday (U), 2:30pm - 3:45pm, |DUE1116|
 **Instructor**                                      `John Hatcliff <http://people.cs.ksu.edu/~hatcliff>`__,
                                                     Office:       2160 |EngHall|,
                                                     Office Hours: By appointment

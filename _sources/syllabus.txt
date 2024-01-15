@@ -5,7 +5,7 @@ Syllabus
 
 .. raw:: html
 
-   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
+   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2024</h3>
 
 .. include:: def.rst
 
@@ -35,22 +35,23 @@ Topics
    * Certification and regulatory approval approaches for systems with software
    * Assurance cases
 
-For Spring 2021, the following topics will be covered...
+For Spring 2024, the following topics will be covered...
 
 * Terms/concepts related to systems theory including control loops,
   sensing, actuating, etc.
-* Real-time OS concepts and real-time schedulability analysis based on FreeRTOS
-* Modeling embedded systems in AADL
+* Modeling embedded systems in AADL and SysMLv2
 * Developing and simulated real-time embedded systems using the HAMR
   model-driven development framework 
-* Extending a HAMR built system with additional capabilities for logging, 
-  security, testing, and cloud-based interactions.
+* Formal specification of AADL/SysMLv2 component and system behaviors
+  using the GUMBO contract languages
+* Property-based testing and formal verification of component and system
+  implementations against executable and logic contracts   
   
 Objectives
 **********
 
 Objectives change depending on the instructor chosen content of the
-course. For Spring 2021, at the end of this course,
+course. For Spring 2024, at the end of this course,
 you should be able to demonstrate the following knowledge and skills:
 
 .. COMMENTS
@@ -62,6 +63,8 @@ you should be able to demonstrate the following knowledge and skills:
    * Understand concepts and context relevant to safety-critical systems such as traceability, designing for testing/verification, safety architectures, etc.
    * Be familiar with concepts related to system certification, regulation, and application of standards
 
+* Explain basic definitions related to system safety
+* Given an overview of the development process for safety-critical systems
 * Understand and explain the utility of model-driven development for embedded systems
 * Be able to use AADL to specify the software architecture of a simple real-time embedded system
 * Be able to apply the HAMR framework to generate code infrastructure for a simple real-time embedded system
@@ -71,7 +74,7 @@ Meeting Times
 *************
 
 :Time: Tuedays (T) & Thursdays (U), 2:30pm - 3:45pm
-:Place: |DUE0096|
+:Place: |DUE1116|
 
 
 Prerequisites

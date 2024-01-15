@@ -5,7 +5,7 @@ Projects
 
 .. raw:: html
 
-   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
+   <h3>CS 855: Development of High-Assurance Software Systems</h3>
 
 .. include:: def.rst
 
@@ -13,6 +13,27 @@ This course will include a major project component, and this page will be
 updated throughout the semester to provide background material and
 resources for the projects.
 
+PCA Pump 
+********************************
+
+In a Department of Homeland Security research project, SAnToS
+researchers worked with Adventium Labs to develop an open source
+medical device platform and a Patient Controlled Analgesic Pump built
+using the platform.  Much of the functionality of the PCA Pump has
+already been implemented in the Slang Embedded development framework.
+
+This project will enhance the existing PCA Pump infrastructure by:
+
+* adding real-time annotations in AADL suitable for getting the project to run
+  through the AADL schedulability analysis tools,
+* developing a deployment of the pump function on the STM 32 and Free RTOS
+  development boards
+* developing hardware interfaces for sensors and actuators for the
+  Open PCA Pump
+
+The overall focus for this project is developing interfaces for
+realistic sensors and actuators and getting the real-time aspects of
+the PCA pump figured out.
 
 
 Isolette 
@@ -40,27 +61,6 @@ The project will start by working with an existing model and implementation of t
 Projects from Previous Semesters
 ################################
 
-PCA Pump 
-********************************
-
-In a Department of Homeland Security research project, SAnToS
-researchers worked with Adventium Labs to develop an open source
-medical device platform and a Patient Controlled Analgesic Pump built
-using the platform.  Much of the functionality of the PCA Pump has
-already been implemented in the Slang Embedded development framework.
-
-This project will enhance the existing PCA Pump infrastructure by:
-
-* adding real-time annotations in AADL suitable for getting the project to run
-  through the AADL schedulability analysis tools,
-* developing a deployment of the pump function on the STM 32 and Free RTOS
-  development boards
-* developing hardware interfaces for sensors and actuators for the
-  Open PCA Pump
-
-The overall focus for this project is developing interfaces for
-realistic sensors and actuators and getting the real-time aspects of
-the PCA pump figured out.
 
 Mine Water Pump Monitoring and Controlling
 ******************************************

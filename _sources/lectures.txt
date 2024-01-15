@@ -238,6 +238,50 @@ This exercise is meant to start from the state of your AADL models in the previo
   * 1:29:17 - Compile and Run (with a discussion of understanding the output of the completed system)
   * 1:31:37 - Conclusion
 
+Isolette Example System
+********************************
+
+.. _lecture-isolette-introduction:
+
+**Lecture: Isolette - Introduction**
+
+This lecture introduces concepts related to Isolette infant incubator medical device.
+
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-intro/slides/INTRO-01-Isolette.pdf>`__)
+* Video (`.mov <http://pub.santoslab.org/high-assurance/module-intro/videos/INTRO-01-Isolette.mov>`__)
+* Study Guide (`.txt <http://pub.santoslab.org/high-assurance/module-intro/study-guides/INTRO-01-Isolette--study-guide.txt>`__)
+  
+.. _lecture-isolette-architecture:
+
+**Lecture: Isolette - Architecture**
+
+This lecture provides an overview of the AADL-based Isolette Architecture.
+
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-aadl/slides/AADL-Isolette.pdf>`__)
+* Video (`.mov <http://pub.santoslab.org/high-assurance/module-aadl/videos/AADL-Isolette.mov>`__)
+
+
+PCA Pump Example System
+********************************
+
+.. _lecture-pca-pump-introduction:
+
+**Lecture: PCA Pump - Introduction**
+
+This lecture introduces concepts related to PCA Pump medical devices.
+
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-pca-pump/slides/PCA-Pump--Intro.pdf>`__)
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-pca-pump/videos/PCA-Pump--Intro.mp4>`__)
+
+.. _lecture-pca-pump-architecture:
+
+**Lecture: PCA Pump - Open PCA Pump Architecture**
+
+This lecture provides an overview of the AADL-based Open PCA Pump Architecture.
+
+* Slides (`.pdf <http://pub.santoslab.org/high-assurance/module-pca-pump/slides/PCA-Pump--Architecture-Overview.pdf>`__)
+* Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-pca-pump/videos/PCA-Pump--Architecture-Overview.mp4>`__)
+
 
 ----
 

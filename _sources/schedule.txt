@@ -5,66 +5,48 @@ Schedule
 
 .. raw:: html
 
-   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2021</h3>
+   <h3>CS 855: Development of High-Assurance Software Systems, Spring 2024</h3>
 
 .. include:: def.rst
 
 ----
 
-Week 1: January 25
+Week 1: January 15
 =================================================================
 
 **Lectures:**
 
-* Course Administration (:ref:`lecture link <lecture-course-overview>`)
-* Course Overview (:ref:`lecture link <lecture-course-overview>`)
-* HAMR Overview  (:ref:`lecture link <lecture-hamr-overview>`)
+* Tuesday - Course Administration (live) (:ref:`lecture link <lecture-course-overview>`)
+* Tuesday - Course Overview (live) (:ref:`lecture link <lecture-course-overview>`)
+* Thursday - (no meeting)
+* HAMR Overview (recorded) (:ref:`lecture link <lecture-hamr-overview>`)
+* PCA Pump Overview (recorded) (:ref:`lecture link <lecture-pca-pump-introduction>`)
 
-**Homework (and tool installation):**
+**Homework**
 
-* Installing and Running a HAMR-built System 
+* All AADL / HAMR tutorials  
 
-  This assignment will guide you through the process of setting up 
-  HAMR as it will be used for the first several assignments.
+  **Due January 26, 11:59pm**
 
-  Link to `Canvas assignment <https://k-state.instructure.com/courses/105841/assignments/1258520>`__
-
-  **Due February 3, 11:59pm**
-
-**Administration:**
-
-* Student/Instructor meetings (appointments with individual students)
-
-  Students and Instructor will get to know each other and discuss
-  possible project topics.
-
-Week 2: February 1
+Week 2: January 22
 =================================================================
     
 **Lectures:**
 
-* AADL Overview (:ref:`lecture link <lecture-aadl-overview>`)
-* AADL: Modeling Embedded Software (:ref:`lecture link <lecture-aadl-modeling-software>`)
-* AADL: Computational Paradigm as viewed by HAMR 
+* Tuesday - PCA Pump Project Planning - Mode Logic Discussion (Slang and Isabelle) (live)
+* Thursday - PCA Pump Project Planning - Phase 1 - Initial Architecture in AADL (live)
+* AADL Overview (recorded) (:ref:`lecture link <lecture-aadl-overview>`)
+* AADL: Modeling Embedded Software (recorded) (:ref:`lecture link <lecture-aadl-modeling-software>`)
 
-**Homework:**
-
-* AADL: Basic Embedded Software Modeling 
-
-  This assignment will cover building simple AADL models of real-time tasks
-  with port communication.  **Due February 8, 11:59pm**
-  
-**Administration:**
-
-* Student/Instructor meetings - further discussion of project planning
-
-Week 3: February 8
+Week 3: January 29
 =================================================================
     
 **Lectures:**
 
-* Basic Control Loop Concepts (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
-* HAMR/Slang Overview
+* Tuesday - PCA Pump Requirements Overview (live)
+* Thursday - ???
+* Basic Safety and Control Loop Concepts (recorded) (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
+* Open PCA Pump Architecture Overview (recorded) (:ref:`lecture link <lecture-pca-pump-architecture>`)
 * HAMR/Slang APIs for Threading and Port-based Communication
 * HAMR/Slang Unit Testing
 
@@ -73,21 +55,18 @@ Week 3: February 8
 * HAMR/Slang Unit Testing
 
   This assignment will cover unit testing of AADL/HAMR/Slang periodic and sporadic components.
-  with port communication.  **Due February 8, 11:59pm**
-  
-**Administration:**
+  with port communication.  
+    
 
-* Student/Instructor meetings - project proposals
-  
-
-Week 4: February 15
+Week 4: February 5
 =================================================================
     
 **Lectures:**
 
-* Isolette Overview
-* Isolette Code Walkthrough
-* System Theory and Control Loop Concepts (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
+* Tuesday - PCA Pump Project Decomposition (who is responsible for each component) (live)
+* Thursday - ???
+* Isolette Introduction (recorded) (:ref:`lecture link <lecture-isolette-introduction>`)
+* Isolette Architecture (recorded) (:ref:`lecture link <lecture-isolette-architecture>`)
   
 **Homework:**
 
@@ -98,116 +77,77 @@ Week 4: February 15
   to the code, and how to execute the system.
   **Due February 22, 11:59pm**
 
-**Administration:**
-
-* Student/Instructor meetings - project discussions
-
-Week 5: February 22
+Week 5: February 12
 =================================================================
 
 Project Phase I class reports
 
 **Lectures:**
 
-(no lectures -- only class meetings about projects)
-
-**Homework:**
-
-(no homework)
+* Tuesday - Student Reports on PCA Pump Project (live)
+* Thursday - ???
   
-Week 6: March 1
+Week 6: February 19
 =================================================================
     
 **Lectures:**
 
-* AADL Flow Specifications
-* HAMR: Awas Basic Information Flow Querying and Visualization
-* HAMR: Inspector framework
-
-**Homework:**
-
-* AADL Flow Specs and Awas Information Flow
-
-  In this assignment, you will add AADL flow annotations to models
-  use the Awas tools to visualize and query information flows.
-  **Due March 8, 11:59pm**
-
-* AADL Inspector Framework
-
-  In this assignment, you will add use the HAMR Inspector Framework 
-  for understanding the behaviors of HAMR-built systems as they execute.
-  **Due March 8, 11:59pm**
-
-**Administration:**
-
-* Student/Instructor meetings - project discussions
-
-Week 7: March 8
+* Tuesday - GUMBO Contracts Overview
+* Thursday - GUMBOX Executable Contracts
+  
+Week 7: February 26
 =================================================================
     
 **Lectures:**
 
-* HAMR: Slang Extensions
-* HAMR: Slang/Scala/Java - Swing User Interfaces for HAMR 
+* Tuesday - Automated Unit Testing with GUMBOX and SlangCheck
+* Thursday - ??
 
-**Homework:**
-
-* Slang extensions and UI implementation  **Due February 82211:59pm**
-
-**Administration:**
-
-* Student/Instructor meetings - project discussions
-
-Week 8: March 15
+Week 8: March 4
 =================================================================
-
-Project Phase I class reports
 
 **Lectures:**
 
-(no lectures -- only class meetings about projects)
-
-**Homework:**
-
-(no homework)
+* Tuesday - Student Project Reports
+* Thursday - ??
 
 
-Week 9: March 22 -- "Spring Break" -- no classes
+Break: March 11 -- "Spring Break" -- no classes
 =================================================================
     
 **Lectures:**
 
 * (no classes)
 
-Week 10: March 29
+Week 9: March 18
+=================================================================
+    
+**Lectures:**
+
+* Tuesday - HAMR System Testing 
+
+Week 10: March 25
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 11: April 5
+Week 11: April 1
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 12: April 12
+Week 12: April 8
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Week 13: April 19
-=================================================================
-    
-**Lectures:**
-
-* (to be announced)
-
-Week 14: April 26
+Week 13: April 15
 =================================================================
     
 **Lectures:**
@@ -215,18 +155,24 @@ Week 14: April 26
 * (to be announced)
 
 
-Week 15: May 3
+Week 14: April 22
 =================================================================
     
 **Lectures:**
 
 * (to be announced)
 
-Finals Week: May 10
+Week 15: April 29
+=================================================================
+        
+**Lectures:**
+
+* (to be announced)
+  
+Finals Week: May 6
 =================================================================
         
 *We will not have a final, but we will meet to discuss project outcomes*
-
 
 
 
