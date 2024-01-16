@@ -16,9 +16,8 @@ Week 1: January 15
 
 **Lectures:**
 
-* Tuesday - Course Administration (live) (:ref:`lecture link <lecture-course-overview>`)
-* Tuesday - Course Overview (live) (:ref:`lecture link <lecture-course-overview>`)
-* Thursday - (no meeting)
+* Thursday - Course Administration (live) (:ref:`lecture link <lecture-course-overview>`)
+* Thursday - Course Overview (live) (:ref:`lecture link <lecture-course-overview>`)
 * HAMR Overview (recorded) (:ref:`lecture link <lecture-hamr-overview>`)
 * PCA Pump Overview (recorded) (:ref:`lecture link <lecture-pca-pump-introduction>`)
 
