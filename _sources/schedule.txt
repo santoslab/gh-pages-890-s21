@@ -31,9 +31,22 @@ Week 2: January 22
     
 **Lectures:**
 
-* Tuesday - PCA Pump Project Planning - Use Cases, System Boundary, Monitored/Controlled Variables (inputs/outputs) (live)
-* Thursday - PCA Pump Project Planning - Mode Logic Discussion (Slang and Isabelle) (live)
-* Basic Safety and Control Loop Concepts (recorded) (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
+* Tuesday 
+   * Before Lecture:  
+      * Watch: FAA REMH Overview
+      * Watch: FAA REMH System Overview
+      * Watch: FAA REMH System Boundary
+      * Read: Open PCA Pump Requirements (Section 2: System Overview)
+   * During Lecture: Discuss Open PCA Pump Overview and System Boundary 
+* Thursday
+   * Before Lecture:
+      * Watch: Basic Safety and Control Loop Concepts (recorded) (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
+      * Watch: FAA REMH Operational Concepts
+      * Read: Open PCA Pump Requirements (Section 3: Operational Concepts)
+   * During Lecture: Discuss Open PCA Pump Operational Concepts and Control Loops
+
+**Other content to cover on your own:**
+
 * AADL Overview (recorded) (:ref:`lecture link <lecture-aadl-overview>`)
 * AADL: Modeling Embedded Software (recorded) (:ref:`lecture link <lecture-aadl-modeling-software>`)
 
@@ -42,7 +55,7 @@ Week 3: January 29
     
 **Lectures:**
 
-* Tuesday - PCA Pump Requirements Overview (live)
+* Tuesday - PCA Pump Project Planning - Mode Logic Discussion (Slang and Isabelle) (live)
 * Thursday - PCA Pump Project Planning - Phase 1 - Initial Architecture in AADL (live)
 * Open PCA Pump Architecture Overview (recorded) (:ref:`lecture link <lecture-pca-pump-architecture>`)
 * HAMR/Slang APIs for Threading and Port-based Communication
