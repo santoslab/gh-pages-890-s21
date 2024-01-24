@@ -115,7 +115,7 @@ The OSATE AADL editor is based on Eclipse, and it uses the Eclipse "workspace" c
 You will often (in the course of these lectures/tutorials or in the course of team development) be given an existing AADL project to work with in the OSATE AADL editor.  This tutorial explains how you load existing AADL projects into OSATE and it illustrates some basic OSATE navigation of an AADL model.
 
 * Video (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-Importing.mp4>`__)
-* Example Files: `HAMR-Slang-Tutorials-Example-00.zip <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Example-00.zip>`__
+* Example Files: `HAMR-Slang-Tutorials-Example-00.zip <https://github.com/santoslab/hamr-tutorials/raw/main/zips/HAMR-Slang-Tutorials-Example-00.zip>`__
 
 .. _tutorial-slang-project-opening:
 
@@ -135,7 +135,7 @@ This is an *exercise* designed for you to complete on your own following the pro
 In this exercise, you will carry out a simple refactoring of some of the component ports in the Temperature Control example.  You will start from the AADL model in the HAMR-Slang-Tutorials-Example-00.zip that you imported into OSATE in the tutorials above.   This refactoring will involve changing the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface). This will require changing the AADL thread component types for TempSensor , TempController , and OperatorInterface components, as well as making some simple changes to corresponding AADL flow specifications. By performing this refactoring, you will gain an initial understanding of
 (a) AADL architecture models (basic ideas of ports and connections) and (b) using the OSATE editor to make simple edits in the AADL graphical and textual views.
 
-* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Refactor.pdf>`__)
+* Exercise instructions (`online readme <https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-Refactor-AADL/HAMR-Slang-Tutorials-Refactor-AADL.md>`__)
 * Example Files: Use the OSATE import of the HAMR-Slang-Tutorials-Example-00.zip from above.  
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Refactor.mp4>`__)
 
@@ -151,8 +151,8 @@ In this exercise, you will carry out a simple refactoring of some of the Slang a
 
 This exercise is meant to start from the state of your AADL models and Slang code from previous exercises.  However, if you don't have your files in a proper state, the .zip file below contains both AADL models and Slang code in the correct state for starting the exercise.  You will need to import these files into OSATE and Sireum IVE (see the exercise description).
 
-* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.pdf>`__)
-* .zip file artifacts starting point: (`.zip <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Example-00-AADL-Refactored.zip>`__)
+* Exercise instructions (`online readme <https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-Refactor-Slang/HAMR-Slang-Tutorials-Refactor-Slang.md>`__)
+* .zip file artifacts starting point: (`.zip <https://github.com/santoslab/hamr-tutorials/raw/main/zips/HAMR-Slang-Tutorials-Example-00-AADL-Refactored.zip>`__)
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Refactor.mp4>`__)
 
   * 0:00 - Overview
@@ -183,7 +183,7 @@ In this exercise, you will create an AADL model of a simple producer/consumer sy
 
 To assist you in completing this exercise and subsequent AADL modeling activities, you are provided with a collection of AADL templates (in a text file) that you can cut/paste into OSATE using your favorite text editor.
 
-* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.pdf>`__)
+* Exercise instructions (`online readme <https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-AADL-Project-from-Scratch/HAMR-Slang-Tutorials-AADL-Project-from-Scratch.md>`__)
 * AADL Template File: (`.txt <http://pub.santoslab.org/high-assurance/module-hamr/videos/AADL-HAMR-templates-manual.txt>`__)
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-AADL-Project-from-Scratch.mp4>`__)
 
@@ -211,8 +211,8 @@ In the previous exercise "Creating an AADL Model from Scratch", you created an A
 
 This exercise is meant to start from the state of your AADL models in the previous "Creating an AADL Model from Scratch" exercise.  However, if you don't have your files in a proper state, the HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip file below contains  AADL Producer/Consumer model (essentially the model-solution for the previous exercise).  These are in the correct state for starting the exercise.  You will need to import these files into OSATE following the steps that you took in the exercise "Loading an Existing AADL Project into OSATE/FMIDE".
 
-* Exercise instructions (`.pdf <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-from-Scratch.pdf>`__)
-* .zip file artifacts starting point: (`.zip <http://pub.santoslab.org/high-assurance/module-hamr/videos/HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip>`__)
+* Exercise instructions (`online readme <https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-Slang-Project-from-Scratch/HAMR-Slang-Tutorials-Slang-Project-from-Scratch.md>`__)
+* .zip file artifacts starting point: (`.zip <https://github.com/santoslab/hamr-tutorials/raw/main/zips/HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip>`__)
 * Solution explanation video: (`.mp4 <http://pub.santoslab.org/high-assurance/module-hamr/videos/Tutorial-Slang-Project-from-Scratch.mp4>`__)
 
   * 0:00 - Overview, Background, and Preparation
