@@ -33,15 +33,15 @@ Week 2: January 22
 
 * Tuesday 
    * Before Lecture:  
-      * Watch: FAA REMH Overview
-      * Watch: FAA REMH System Overview
-      * Watch: FAA REMH System Boundary
+      * Watch: FAA REMH Overview (recorded)
+      * Watch: FAA REMH System Overview (recorded)
+      * Watch: FAA REMH System Boundary (recorded)
       * Read: Open PCA Pump Requirements (Section 2: System Overview)
    * During Lecture: Discuss Open PCA Pump Overview and System Boundary 
 * Thursday
    * Before Lecture:
       * Watch: Basic Safety and Control Loop Concepts (recorded) (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
-      * Watch: FAA REMH Operational Concepts
+      * Watch: FAA REMH Operational Concepts (recorded)
       * Read: Open PCA Pump Requirements (Section 3: Operational Concepts)
    * During Lecture: Discuss Open PCA Pump Operational Concepts and Control Loops
 
@@ -55,30 +55,44 @@ Week 3: January 29
     
 **Lectures:**
 
-* Tuesday - PCA Pump Project Planning - Mode Logic Discussion (Slang and Isabelle) (live)
-* Thursday - PCA Pump Project Planning - Phase 1 - Initial Architecture in AADL (live)
-* Open PCA Pump Architecture Overview (recorded) (:ref:`lecture link <lecture-pca-pump-architecture>`)
-* HAMR/Slang APIs for Threading and Port-based Communication
-* HAMR/Slang Unit Testing
+* Tuesday - Safety and Control Loops
+   * Before Lecture:
+      * Watch: Basic Safety and Control Loop Concepts (recorded) (:ref:`lecture link <lecture-intro-control-loops-temp-controller>`)
+   * During Lecture: Discuss progress on edits in requirements document (System Overview and Context), discuss Safety and Control Loops lecture 
+* Thursday - Operational Concepts 
+   * Before Lecture:
+      * Watch: FAA REMH Operational Concepts (recorded)
+      * Read: Open PCA Pump Requirements (Section 3: Operational Concepts)
+   * During Lecture: Discuss Operational Concepts and Plans for revision in requirements document 
 
-**Homework:**
+**Project Work:**
 
-* HAMR/Slang Unit Testing
-
-  This assignment will cover unit testing of AADL/HAMR/Slang periodic and sporadic components.
-  with port communication.  
-    
+* Finalizing Open PCA System Overview and Boundary content in the requirements document
+* Beginning documentation of Operational Concepts and System Inputs and Outputs
 
 Week 4: February 5
 =================================================================
     
 **Lectures:**
 
-* Tuesday - PCA Pump Project Decomposition (who is responsible for each component) (live)
-* Thursday - ???
+* Tuesday - PCA Pump Architecture 
+   * Before Lecture:
+      * Watch: Open PCA Pump Architecture Overview (recorded) (:ref:`lecture link <lecture-pca-pump-architecture>`)
+   * During Lecture: Discuss PCA Pump architecture; main components, etc. -- looking ahead to coding and verification 
+* Thursday - Reviewing document edits on Operational Concepts, Control Loops, etc. 
+   * During Lecture: Reviewing document edits on Operational Concepts, Control Loops, etc. 
+
+**Other content to cover on your own:**
+
 * Isolette Introduction (recorded) (:ref:`lecture link <lecture-isolette-introduction>`)
 * Isolette Architecture (recorded) (:ref:`lecture link <lecture-isolette-architecture>`)
   
+
+Week 5: February 12
+=================================================================
+
+Initial discussion of coding / specification and testing
+
 **Homework:**
 
 * Isolette - Code Review and Execution
@@ -88,16 +102,7 @@ Week 4: February 5
   to the code, and how to execute the system.
   **Due February 22, 11:59pm**
 
-Week 5: February 12
-=================================================================
 
-Project Phase I class reports
-
-**Lectures:**
-
-* Tuesday - Student Reports on PCA Pump Project (live)
-* Thursday - ???
-  
 Week 6: February 19
 =================================================================
     
