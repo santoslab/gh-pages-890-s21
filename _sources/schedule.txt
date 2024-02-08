@@ -73,6 +73,24 @@ Week 3: January 29
 Week 4: February 5
 =================================================================
     
+* Tuesday - Operational Concepts
+   * Before Lecture:
+      * Watch: FAA REMH Operational Concepts (recorded)
+      * Read: Open PCA Pump Requirements (Section 3: Operational Concepts)
+   * During Lecture: Discuss control loops in PCA Pump and Point-of-Care Context; Discuss progress on edits in requirements document (System Overview and Context); Discuss documentation of data on system interfaces
+* Thursday - STPA Overview  
+   * Before Lecture:
+      * Read: Leveson "Engineering a Safer World" (Chapter 8)
+   * During Lecture: Discuss STPA Concepts 
+
+**Project Work:**
+
+* Beginning documentation of Operational Concepts and System Inputs and Outputs
+  
+
+Week 5: February 12
+=================================================================
+
 **Lectures:**
 
 * Tuesday - PCA Pump Architecture 
@@ -86,11 +104,11 @@ Week 4: February 5
 
 * Isolette Introduction (recorded) (:ref:`lecture link <lecture-isolette-introduction>`)
 * Isolette Architecture (recorded) (:ref:`lecture link <lecture-isolette-architecture>`)
-  
 
-Week 5: February 12
+
+Week 6: February 19
 =================================================================
-
+    
 Initial discussion of coding / specification and testing
 
 **Homework:**
@@ -103,30 +121,23 @@ Initial discussion of coding / specification and testing
   **Due February 22, 11:59pm**
 
 
-Week 6: February 19
+  
+Week 7: February 26
 =================================================================
-    
+
 **Lectures:**
 
 * Tuesday - GUMBO Contracts Overview
 * Thursday - GUMBOX Executable Contracts
-  
-Week 7: February 26
-=================================================================
-    
-**Lectures:**
 
-* Tuesday - Automated Unit Testing with GUMBOX and SlangCheck
-* Thursday - ??
 
 Week 8: March 4
 =================================================================
 
 **Lectures:**
 
-* Tuesday - Student Project Reports
+* Tuesday - Automated Unit Testing with GUMBOX and SlangCheck
 * Thursday - ??
-
 
 Break: March 11 -- "Spring Break" -- no classes
 =================================================================
