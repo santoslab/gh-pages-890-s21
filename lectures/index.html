@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Lectures Course Administration Slides Safety Critical Systems Concepts Lecture: Control Loop Basics illustrated with Temperature Controller Example
+This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way)." />
+<meta name="keywords" content="formal methods, software engineering, verification, validation, testing" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://highassurance.santoslab.org/lectures/" />
+
+
+    <title>
+        
+             :: CS 855 Homepage 
+        
+    </title>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="stylesheet" href="https://highassurance.santoslab.org/main.63bff92087267840203a6bfd0a840c0dd5acf394bc25564a176636fb6b987a82.css" integrity="sha256-Y7/5IIcmeEAgOmv9CoQMDdWs85S8JVZKF2Y2&#43;2uYeoI=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://highassurance.santoslab.org/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://highassurance.santoslab.org/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://highassurance.santoslab.org/favicon-16x16.png">
+    <link rel="manifest" href="https://highassurance.santoslab.org/site.webmanifest">
+    <link rel="mask-icon" href="https://highassurance.santoslab.org/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="https://highassurance.santoslab.org/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Lectures Course Administration Slides Safety Critical Systems Concepts Lecture: Control Loop Basics illustrated with Temperature Controller Example
+This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way).">
+
+<meta itemprop="wordCount" content="2452"><meta itemprop="image" content="https://highassurance.santoslab.org/" />
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://highassurance.santoslab.org/" /><meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Lectures Course Administration Slides Safety Critical Systems Concepts Lecture: Control Loop Basics illustrated with Temperature Controller Example
+This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way)."/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://highassurance.santoslab.org/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark"> </span>
+            <span class="logo__text">Home</span>
+            <span class="logo__cursor" style=
+                  "visibility:hidden;
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://highassurance.santoslab.org/lectures/">Lectures</a></li><li><a href="https://highassurance.santoslab.org/schedule/">Schedule</a></li><li><a href="https://highassurance.santoslab.org/project/">Project</a></li><li><a href="https://highassurance.santoslab.org/tools/">Tools</a></li><li><a href="https://highassurance.santoslab.org/syllabus/">Syllabus</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main aria-role="main">
+        <div>
+            <br/><br/>
+            <center>
+    <table style="text-align: left; " border-color="" border="0" cellpadding="2" cellspacing="2">
+    <tbody>
+    <tr>
+    <td style="vertical-align: top; padding: 0 5px 0 0;">
+    <img src="https://highassurance.santoslab.org/img/high-assurance-safety.png" width="600px" alt="high assurance graphic" align="left" />
+    </td>
+    <td style="vertical-align: top;"><br/>
+    <font style="font-weight: bold;" size="+2">CS 855</font><br/>
+    <font style="font-weight: bold; font-style: italic;" size="+1">High Assurance Systems</font><br/>
+    <br/>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+</center>
+
+        </div>
+    </main>
+    <main class="post">
+
+        <article>
+            <h2 class="post-title"><a href="https://highassurance.santoslab.org/lectures/"></a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h1 id="lectures">Lectures</h1>
+<h2 id="course-administration">Course Administration</h2>
+<ul>
+<li><a href="https://drive.google.com/file/d/1CMybdmwpR-T_u0QXCCTDWdZRNm2af3Qq/view?usp=sharing">Slides</a></li>
+</ul>
+<h2 id="safety-critical-systems-concepts">Safety Critical Systems Concepts</h2>
+<p><strong>Lecture: Control Loop Basics illustrated with Temperature Controller Example</strong></p>
+<p>This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way). The lecture briefly discusses how requirements engineering and safety reasoning relate to control loops.</p>
+<ul>
+<li>Slides <a href="https://drive.google.com/file/d/1_I5nTVcI_m8DalzScHCs4gInqsCpd3vN/view?usp=sharing">(pdf)</a></li>
+<li>Video <a href="https://drive.google.com/file/d/1QWPbrMp3C5CH0NP0i7b5gdXqluZSov7p/view?usp=sharing">(mp4)</a></li>
+<li>Study Guide <a href="https://drive.google.com/file/d/15IppLbLDL_3zs9rrXiGFVAAh9pjm9o6g/view?usp=sharing">(txt)</a></li>
+</ul>
+<hr>
+<p><strong>Lecture: Differences between Conventional Development and Development of Safety-Critical Systems</strong></p>
+<ul>
+<li>Slides: <a href="https://drive.google.com/file/d/1hYAmNe0I7nLop21pfq7z33ozlY--ql_a/view?usp=sharing">(pdf)</a></li>
+<li>Reading: Hatcliff et al. &ldquo;Certifiably Safe Software-Dependent Systems: Challenges and Directions&rdquo;, Future of Software Engineering 2014, at the International Conference on Software Engineering (Section 2.2) <a href="https://drive.google.com/file/d/15CIvW85Cex2krSPw3cxvzzIWZDHNrwYI/view?usp=sharing">(pdf)</a></li>
+<li><a href="https://www.fhwa.dot.gov/cadiv/segb/views/process/index.cfm">General Software Process Diagrams and Steps (from California Deparment of Transportation)</a></li>
+</ul>
+<hr>
+<p><strong>Lecture: Basic Safety-Related Terminology</strong></p>
+<ul>
+<li>Slides: <a href="https://drive.google.com/file/d/1xUexl6UQfIvYwkbF0zI3XEXISMkoFcHL/view?usp=sharing">(pdf)</a></li>
+<li>Reading: Hatcliff et al. &ldquo;Certifiably Safe Software-Dependent Systems: Challenges and Directions&rdquo;, Future of Software Engineering 2014, at the International Conference on Software Engineering (Sections 1,2.1) <a href="https://drive.google.com/file/d/15CIvW85Cex2krSPw3cxvzzIWZDHNrwYI/view?usp=sharing">(pdf)</a></li>
+<li>Study Guide: <a href="https://drive.google.com/file/d/1pemj_0ZXCQ-rGLhAfMkYXsjEWpigNP6a/view?usp=sharing">(txt)</a></li>
+</ul>
+<h2 id="hamr--aadl--sysmlv2">HAMR / AADL / SysMLv2</h2>
+<p><strong>Lecture: AADL Overview</strong></p>
+<p>This presentation by Dr. Sam Procter from the Software Engineering Institute describes AADL, its use in industry, and some of the ongoing research projects that AADL. NOTE: Dr. Procter is a PhD graduate from SAnToS Lab/KSU, and he first learned about AADL in this course!</p>
+<ul>
+<li>Video <a href="https://www.youtube.com/watch?v=CTm87h7tyWc&amp;feature=emb_logo">YouTube</a></li>
+</ul>
+<hr>
+<p><strong>Lecture: AADL: Modeling Embedded Software</strong></p>
+<p>This lecture covers the basic aspects of modeling embedded software with AADL using the temperature controller example. The lecture includes concepts related to AADL thread, process, and system components, AADL port-based communication, and AADL packages. The lecture scope is tailored to the subset of AADL supported by HAMR code generation. This material provides the basis for follow-on tool tutorials that use the AADL OSATE environment to develop simple system software models.</p>
+<ul>
+<li>Slides <a href="https://drive.google.com/file/d/1ptg_m1DqwxhKFRkDkFn05_Bx6fp9Y9ks/view?usp=sharing">(pdf)</a></li>
+<li>Video <a href="https://drive.google.com/file/d/1N4EkMNOthWd2y-CNN3yRzAL2gQlO95H3/view?usp=sharing">(mp4)</a></li>
+</ul>
+<hr>
+<p><strong>Lecture: HAMR Overview (Parts 1, 2)</strong></p>
+<p>This is a two part lecture that provides an overview of the HAMR model-driven development tool for AADL (HAMR stands for “High Assurance Modeling and Rapid Engineering for Embedded Systems”). This lecture should be watched before moving on to other HAMR-related lectures.</p>
+<p>Part 1: Provides the overall motivation and scope for HAMR, and covers how HAMR uses AADL.</p>
+<ul>
+<li>Slides <a href="https://drive.google.com/file/d/1hGTnYuYVQb2GGmQCe9CVGhXnBADkIOcv/view?usp=sharing">(pdf)</a></li>
+<li>Video <a href="https://drive.google.com/file/d/1EX-uiaZKzNm1KgVw42XuGUMJgnR0j4uL/view?usp=sharing">(mp4)</a></li>
+</ul>
+<p>Part 2: Illustrates programming HAMR-generated components/systems in Slang (a high-assurance subset of Scala), which can be integrated with Scala and Java and deployed on the JVM (or alternatively, pure Slang can be compiled to C). This lecture also illustrates a variety of HAMR/Slang-related capabilities such as unit testing, run-time monitoring, and fault injection.</p>
+<ul>
+<li>Slides <a href="https://drive.google.com/file/d/1ELwmupvAkSKTsOxzepuIddvqy10Xgpjf/view?usp=sharing">(pdf)</a></li>
+<li>Video <a href="https://drive.google.com/file/d/1lkEznDE5lJRPucju1BypsS-U1qHg956a/view?usp=sharing">(mp4)</a></li>
+</ul>
+<hr>
+<p><strong>Tool Tutorial: HAMR Installation</strong></p>
+<p>This video covers installation of the HAMR tool following the options of a direct install (as opposed to the virtual machine option) and using the Formal Methods Integrated Development Environment (FMIDE) customization of the OSATE AADL editor (as opposed to installing HAMR in the “regular” OSATE distribution). Instructions for other types of installation can be found on the HAMR website. Also, this video addresses installation of the tools needed for Slang development of HAMR-generated components. The HAMR website explains how to extend this installation with the tools needed for C development of HAMR-generated components.</p>
+<ul>
+<li>Video <a href="https://drive.google.com/file/d/1EX-uiaZKzNm1KgVw42XuGUMJgnR0j4uL/view?usp=sharing">(mp4)</a></li>
+<li><a href="https://hamr.sireum.org/hamr-doc/ch0X-hamr-installation.html">HAMR Installation Instructions</a></li>
+</ul>
+<hr>
+<p><strong>Tool Tutorial: AADL OSATE Workspace Concepts</strong></p>
+<p>The OSATE AADL editor is based on Eclipse, and it uses the Eclipse “workspace” concept to manage AADL project files. This video gives an overview of the workspace concept and recommendations for how to use workspaces in the context of HAMR development. You should follow these recommendations when working with HAMR AADL models in this tutorial series.</p>
+<ul>
+<li>Video <a href="https://drive.google.com/file/d/1ZtahP6Po7nRV7dg-Yatz9GoDYOHj2XEc/view?usp=sharing">(mp4)</a></li>
+<li>Slides <a href="https://drive.google.com/file/d/19Ks1yidAgqOXQerYewq7pXJ12vwXkrCV/view?usp=sharing">(pdf)</a></li>
+</ul>
+<hr>
+<p><strong>Tool Tutorial: Loading an Existing AADL Project into OSATE/FMIDE</strong></p>
+<p>You will often (in the course of these lectures/tutorials or in the course of team development) be given an existing AADL project to work with in the OSATE AADL editor. This tutorial explains how you load existing AADL projects into OSATE and it illustrates some basic OSATE navigation of an AADL model.</p>
+<ul>
+<li>Video <a href="https://drive.google.com/file/d/1ko2VtYRuMEJjIp74oN-qXN_pzdDs_tit/view?usp=sharing">(mp4)</a></li>
+<li>Example Files: <a href="https://github.com/santoslab/hamr-tutorials/blob/main/zips/HAMR-Slang-Tutorials-Example-00.zip">HAMR-Slang-Tutorials-Example-00.zip</a></li>
+</ul>
+<hr>
+<p><strong>Tool Tutorial: Loading an Generated/Existing HAMR Slang Project into the IntelliJ-based Sireum IVE</strong></p>
+<p>Given an AADL model, HAMR can generate a HAMR Slang project with AADL run-time infrastructure and component code skeletons that you add application code to to get a complete system. This video explains how you open a HAMR Slang project in the Sireum IVE (a customization of IntelliJ). These instructions also apply to opening existing HAMR Slang projects that are distributed in the HAMR Slang tutorials. The tutorial addresses the basic structure of HAMR Slang projects, notes the use of the Scala Build Tool (SBT) to manage project builds, describes basic correspondences between HAMR generated Slang code and AADL models, describes how to compile and run a HAMR Slang project, how to run unit tests. The tutorial concludes with an initial discussion of project files that should be not checked into git and other source code repositories.</p>
+<ul>
+<li>Video <a href="https://drive.google.com/file/d/1cdGTBlJahUuOr9GpsaC0T5JyGBhLx2FV/view?usp=sharing">(mp4)</a></li>
+<li>Example Files: Use HAMR-Slang-Tutorials-Example-00.zip from above. If you have already downloaded, no need to download again.</li>
+</ul>
+<hr>
+<p><strong>Tool Exercise: Refactoring an AADL Model to Remove Ports and Change Port Categories</strong></p>
+<p>This is an exercise designed for you to complete on your own following the provided instructions. A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
+<p>In this exercise, you will carry out a simple refactoring of some of the component ports in the Temperature Control example. You will start from the AADL model in the HAMR-Slang-Tutorials-Example-00.zip that you imported into OSATE in the tutorials above. This refactoring will involve changing the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface). This will require changing the AADL thread component types for TempSensor , TempController , and OperatorInterface components, as well as making some simple changes to corresponding AADL flow specifications. By performing this refactoring, you will gain an initial understanding of (a) AADL architecture models (basic ideas of ports and connections) and (b) using the OSATE editor to make simple edits in the AADL graphical and textual views.</p>
+<ul>
+<li>Exercise instructions <a href="https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-Refactor-AADL/HAMR-Slang-Tutorials-Refactor-AADL.md">(online readme)</a></li>
+<li>Example Files: Use the OSATE import of the HAMR-Slang-Tutorials-Example-00.zip from above.</li>
+<li>Solution explanation video: <a href="https://drive.google.com/file/d/1R8jPDMiuOg8e9OMyj_euFXLztTqNtDCs/view?usp=sharing">(mp4)</a></li>
+</ul>
+<hr>
+<p><strong>Tool Exercise: Refactoring a Slang Implementation of an AADL System</strong></p>
+<p>This is an exercise designed for you to complete on your own following the provided instructions. A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
+<p>This exercise is designed to help you learn the basics of using HAMR to generate Slang implementations of AADL-based systems, Slang thread component application logic, and Slang port-communication APIs.</p>
+<p>In this exercise, you will carry out a simple refactoring of some of the Slang application code in the Temperature Control example. This builds on a refactoring of the original Temperature Control AADL model carried out in a previous exercise. In that exercise you changed the kinds of ports and connections used to communicate temperature information from the sensor to the controller (and to the operator interface). In this exercise, you will regenerate the Slang code from the refactored AADL model. This will keep most of the existing code, but it will change the Slang APIs associated with your component ports to align with the refactored models. This will leave the Slang code with some syntax errors because the old application code will not completely match the newly regenerated APIs for port communication. To address this, you will then need to make some small changes in the Slang component application code to match the new version of the generated port APIs. You will confirm that your refactored code is working correctly by compiling and running it with the Proyek build system in IntelliJ.</p>
+<p>This exercise is meant to start from the state of your AADL models and Slang code from previous exercises. However, if you don’t have your files in a proper state, the .zip file below contains both AADL models and Slang code in the correct state for starting the exercise. You will need to import these files into OSATE and Sireum IVE (see the exercise description).</p>
+<ul>
+<li>Exercise instructions <a href="https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-Refactor-Slang/HAMR-Slang-Tutorials-Refactor-Slang.md">(online readme)</a></li>
+<li>.zip file artifacts starting point: <a href="https://github.com/santoslab/hamr-tutorials/blob/main/zips/HAMR-Slang-Tutorials-Example-00-AADL-Refactored.zip">(zip)</a></li>
+</ul>
+<p>Solution explanation video: <a href="https://drive.google.com/file/d/1pSijo95bhrLYo98YITOqklCHJnz2oGHF/view?usp=sharing">(mp4)</a></p>
+<ul>
+<li>0:00 - Overview</li>
+<li>15:23 - Loading AADL and Slang projects from provide zip file (optional – only needed if you are not starting from the results of previous exercises)</li>
+<li>19:48 - Confirming code is ready for exercise; hints about what will change in code; building existing project before refactoring</li>
+<li>23:04 - Explanation of how code generation avoids overwriting existing application files but does generate new infrastructure files</li>
+<li>26:06 - Code Generation</li>
+<li>38:54 - Compile and Observe Errors</li>
+<li>40:42 - Refactor the TempSensor Compute Entry Point Code</li>
+<li>44:30 - Refactor the TempSensor Initialize Entry Point Code</li>
+<li>48:18 - Recompile and Observe Errors (some eliminated)</li>
+<li>45:50 - Refactor the Message Handlers in the TempControl Compute Entry Point</li>
+<li>55:55 - Recompile and Observe Errors (more eliminated)</li>
+<li>57:20 - Refactor the OperatorInterface Compute Entry Point</li>
+<li>59:08 - Recompile (No Errors)</li>
+<li>59:50 - Refactor TempControl Unit Tests</li>
+<li>1:03:40 - Run Unit Tests</li>
+<li>1:04:40 - Run System</li>
+</ul>
+<hr>
+<p><strong>Tool Exercise: Creating an AADL Model from Scratch</strong></p>
+<p>This is an exercise designed for you to complete on your own following the provided instructions. A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
+<p>In this exercise, you will create an AADL model of a simple producer/consumer system. This will cover creation of AADL packages (with imports), threads, processes, systems, and a struct-based data type. The solution video also illustrates the OSATE content assist facility and creation of AADL graphical model diagrams from the completed textual model.</p>
+<p>To assist you in completing this exercise and subsequent AADL modeling activities, you are provided with a collection of AADL templates (in a text file) that you can cut/paste into OSATE using your favorite text editor.</p>
+<ul>
+<li>Exercise instructions <a href="https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-AADL-Project-from-Scratch/HAMR-Slang-Tutorials-AADL-Project-from-Scratch.md">(online readme)</a></li>
+<li>AADL Template File: <a href="https://drive.google.com/file/d/1mcrrqzhqufgttx4Dh7du44THsPSPKiM5/view?usp=sharing">(txt)</a></li>
+</ul>
+<p>Solution explanation video: <a href="https://drive.google.com/file/d/10Z0JPxJ7uN2EbBepKAWpmXRnv-s3Jtii/view?usp=sharing">(mp4)</a></p>
+<ul>
+<li>0:00 - Overview</li>
+<li>7:43 File System - HAMR Project Directory Hierarchy Creation</li>
+<li>11:52 OSATE - AADL New Project Creation</li>
+<li>16:39 Discussion: Top-down vs Bottom-up Model Creation</li>
+<li>18:22 OSATE - Creation of Producer Package Skeleton</li>
+<li>27:04 OSATE - Creation of ProdCons (system-level) Package and Message Data Type</li>
+<li>32:50 OSATE - Creation of Producer Artifacts</li>
+<li>37:55 Discussion: OSATE Content Assist</li>
+<li>50:05 OSATE - Creation of Consumer Artifacts</li>
+<li>56:00 OSATE - Creation of System Component</li>
+<li>1:01:45 OSATE - Instance Model Creation</li>
+<li>1:03:48 OSATE - Diagram Creation</li>
+</ul>
+<hr>
+<p><strong>Tool Exercise: Creating a HAMR Slang Project from Scratch</strong></p>
+<p>This is an exercise designed for you to complete on your own following the provided instructions. A solution video is provided that is meant to be used help you resolve any difficulties encountered when trying to do the exercise on your own.</p>
+<p>In the previous exercise “Creating an AADL Model from Scratch”, you created an AADL model of a simple producer/consumer system. In this exercise, you will build a Slang-based implementation of the system that will run on the JVM. This will help you learn how to prepare your directory structure for HAMR Slang code generation, invoke the HAMR code generator to generate Slang code from an AADL model, code simple application logic (for the Producer and Consumer threads, in this example), and compile and run the system.</p>
+<p>This exercise is meant to start from the state of your AADL models in the previous “Creating an AADL Model from Scratch” exercise. However, if you don’t have your files in a proper state, the HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip file below contains AADL Producer/Consumer model (essentially the model-solution for the previous exercise). These are in the correct state for starting the exercise. You will need to import these files into OSATE following the steps that you took in the exercise “Loading an Existing AADL Project into OSATE/FMIDE”.</p>
+<ul>
+<li>Exercise instructions <a href="https://github.com/santoslab/hamr-tutorials/blob/main/HAMR-Slang-Tutorials-Exercises/HAMR-Slang-Tutorials-Slang-Project-from-Scratch/HAMR-Slang-Tutorials-Slang-Project-from-Scratch.md">(online readme)</a></li>
+<li>.zip file artifacts starting point: <a href="https://github.com/santoslab/hamr-tutorials/blob/main/zips/HAMR-Slang-Tutorials-Prod-Cons-AADL-only.zip">(zip)</a></li>
+</ul>
+<p>Solution explanation video: <a href="https://drive.google.com/file/d/1a35jwjAqAnbO8jdRFlp6lmcRC2G08mso/view?usp=sharing">(mp4)</a></p>
+<ul>
+<li>0:00 - Overview, Background, and Preparation</li>
+<li>4:10 - Ensure that the file system has the proper structure for a HAMR Slang project</li>
+<li>6:43 - Confirm AADL Model is Ready for Slang Code Generation</li>
+<li>8:03 - Generate Code (and explanation of structure of HAMR Slang generated code (around 13:22))</li>
+<li>17:58 - Open Slang Project in the Sireum IVE (IntelliJ)</li>
+<li>20:42 - Compile</li>
+<li>22:40 - Run Skeleton Code</li>
+<li>23:50 - Discussion: Explanation of Behavior of Skeleton Code (with intuition about AADL semantics)</li>
+<li>32:37 - Provide Slang Declarations of Producer Component Local State Variables (with discussion about understanding/using the Slang types generated from AADL types, special formatting of literals)</li>
+<li>47:25 - Implement Producer Initialize Entry Point (with discussion of standard structure for initialize entry point: initializing component local variables, and putting initial values on output data ports)</li>
+<li>54:04 - Implement Producer Compute Entry Point (with discussion of calling constructors for Slang representations of AADL-derived types, using output port APIs, using Slang if-statements, other AADL entry points)</li>
+<li>1:09:08 - Compile and Run (with explanation of logging output when we have a completed producer but are still using the auto-generated template for the consumer)</li>
+<li>1:12:43 - Provide Slang Declarations of Consumer Component Local State Variables</li>
+<li>1:15:18 - Implement Consumer Initialize Entry Point</li>
+<li>1:15:57 - Implement Consumer Compute Entry Point (with a discussion of the semantics of AADL HAMR event handlers around 1:17:45, discussion of example API usage 1:20:54, discussion of coding the entry point 1:22:50)</li>
+<li>1:29:17 - Compile and Run (with a discussion of understanding the output of the completed system)</li>
+<li>1:31:37 - Conclusion</li>
+</ul>
+<h2 id="requirements-engineering">Requirements Engineering</h2>
+<p><strong>General Reading</strong> FAA Requirements Engineering Management Handbook (pdf)</p>
+<p><strong>Lecture: Introduction to Requirements</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+</ul>
+<p><strong>Lecture: FAA REMH Overview</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: System Overview</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+<li>Supplement: Advice and common pitfalls (.pdf,.mov)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Identify the System Boundary</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Develop the Operational Concepts</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+</ul>
+<p><strong>Lecture: Additional material on details of use case writing based on Cockburn&rsquo;s Writing Effective Use Cases
+Action Steps</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mp4)</li>
+</ul>
+<p>Extensions</p>
+<ul>
+<li>Slides: (.pdf)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Identify the Environment Assumptions</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Develop the Functional Architecture</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+<li>Video: (.mov)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Revise the Functional Architecture to Meet Implementation Constraints</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Identify the System Modes</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Develop Detailed Requirements</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+</ul>
+<p><strong>Lecture: FAA REMH: Define the Software Requirements</strong></p>
+<ul>
+<li>Slides: (.pdf)</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+<script type="text/javascript" src="https://highassurance.santoslab.org/bundle.min.fb8aea4cfe2c67bdb3a859169f04f5b89012626f585389ff6b23fe2d3abe861228d6960eb74e4e8e4e5abb8abe367aeb4cf0aab17877e8b17c66380e907e9335.js" integrity="sha512-&#43;4rqTP4sZ72zqFkWnwT1uJASYm9YU4n/ayP&#43;LTq&#43;hhIo1pYOt05Ojk5au4q&#43;NnrrTPCqsXh36LF8ZjgOkH6TNQ=="></script>
+
+
+
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    </body>
+</html>

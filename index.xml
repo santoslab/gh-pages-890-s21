@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS 855 Homepage</title>
+    <link>https://highassurance.santoslab.org/</link>
+    <description>Recent content on CS 855 Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://highassurance.santoslab.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CS 855 Schedule</title>
+      <link>https://highassurance.santoslab.org/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/schedule/</guid>
+      <description>Schedule Week 1: January 20 Lectures:&#xA;Tuesday - Course Administration (live) On your own (recorded lectures &amp;ndash; see Lectures page) HAMR Overview (part 1) HAMR Overview (part 2) Homework&#xA;HAMR tutorials (see Lectures page) HAMR Installation AADL OSATE Workspace Concepts Loading an Existing AADL Project into OSATE/FMIDE Loading an Generated/Existing HAMR Slang Project into the IntelliJ-based Sireum IVE Refactoring an AADL Model to Remove Ports and Change Port Categories Refactoring a Slang Implementation of an AADL System Due January 26, 11:59pm</description>
+    </item>
+    <item>
+      <title>CS 855 Syllabus</title>
+      <link>https://highassurance.santoslab.org/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/syllabus/</guid>
+      <description>Syllabus CS 855: High-Assurance Systems, Spring 2025&#xA;Purpose The course will cover techniques for developing high assurance systems – systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques – techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://highassurance.santoslab.org/bio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/bio/</guid>
+      <description>John Hatcliff &amp;ndash; Bio Sketch Bio Sketch - To be Completed</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://highassurance.santoslab.org/lectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/lectures/</guid>
+      <description>Lectures Course Administration Slides Safety Critical Systems Concepts Lecture: Control Loop Basics illustrated with Temperature Controller Example&#xA;This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way).</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://highassurance.santoslab.org/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/overview/</guid>
+      <description>Overview This course covers techniques for developing high assurance systems – systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques – techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://highassurance.santoslab.org/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/project/</guid>
+      <description>Project This year the course project will involve specifying and verifying the software of two medical devices:&#xA;An &amp;ldquo;Isolette&amp;rdquo; (infant incubator) - the medical goal of the Isolette is to keep a new-born baby at an appropriate temperature for the first hours of its life by placing it in an enclosure in which the air in the enclosure can be monitored and controlled. A Patient-Controlled Analgesic (PCA) Pump - the medical goal of a PCA pump is to provide a hospital patient with pain relief by intravenously infusing opioids at intervals partially controlled by a patient.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://highassurance.santoslab.org/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://highassurance.santoslab.org/tools/</guid>
+      <description>Tools This course will use the following tools, which students should have installed on laptops that can be brought to class for in-class exercises.&#xA;Sireum&#xA;Sireum is a programming language, software engineering, and formal methods framework developed at Kansas State University. This class will use Slang (the Sireum programming Language) and Logika (an automated SMT-based verification environment for Slang)&#xA;Download and installation instructions &amp;ndash; installation based on git sources is recommended Video overview of Slang and Logika </description>
+    </item>
+  </channel>
+</rss>
