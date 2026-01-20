@@ -48,7 +48,7 @@ Download and installation instructions &ndash; installation based on git sources
 Sireum
 Sireum is a programming language, software engineering, and formal methods framework developed at Kansas State University. This class will use Slang (the Sireum programming Language) and Logika (an automated SMT-based verification environment for Slang)
 Download and installation instructions – installation based on git sources is needed for this class Resources While the above Sireum/HAMR installation steps will install all of the tools needed for the class, here are some links to other documentation that you might find useful.">
-  <meta itemprop="wordCount" content="151">
+  <meta itemprop="wordCount" content="471">
   <meta itemprop="image" content="https://s21.highassurance.santoslab.org/">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -194,6 +194,71 @@ Download and installation instructions – installation based on git sources is 
 <li><a href="https://sel4.systems">seL4 main website</a></li>
 <li><a href="https://docs.sel4.systems/projects/microkit/">seL4 microkit documentation</a></li>
 </ul>
+<hr>
+<h1 id="hamr-installation-part-of-sireum-with-vscode-extension">HAMR Installation (part of Sireum) with VSCode Extension</h1>
+<h2 id="windows-setup-instructions">Windows Setup Instructions</h2>
+<h3 id="1-buildinstall-sireum">1. Build\Install <strong>Sireum</strong></h3>
+<p>Open a <strong>Command Prompt</strong> and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git clone --recursive https://github.com/sireum/kekinian Sireum
+</span></span><span style="display:flex;"><span>Sireum\bin\build.cmd
+</span></span></code></pre></div><p>(Recommended) Add the following environment variables so Sireum tools are available from any shell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">set</span> SIREUM_HOME=&lt;path-to-Sireum&gt;\Sireum
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> PATH=%SIREUM_HOME%\bin;%PATH%
+</span></span></code></pre></div><h3 id="2-install-ive">2. Install <strong>IVE</strong></h3>
+<p><em>(Interactive Verification Environment based on IntelliJ)</em></p>
+<p>From a command prompt:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>%SIREUM_HOME%\bin\sireum setup ive
+</span></span></code></pre></div><p>Launch IVE</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">start</span> /B %SIREUM_HOME%\bin\win\idea\bin\IVE.exe
+</span></span></code></pre></div><h3 id="3-install-codeive">3. Install <strong>CodeIVE</strong></h3>
+<p><em><strong>(Interactive Verification Environment based on VS Codium, for Rust and SysMLv2 IDE support)</strong></em></p>
+<p>From a command prompt:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>%SIREUM_HOME%\bin\sireum setup vscode
+</span></span></code></pre></div><p>Launch CodeIVE</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">start</span> /B %SIREUM_HOME%\bin\win\vscodium\CodeIVE.exe
+</span></span></code></pre></div><h2 id="linux-setup-instructions">Linux Setup Instructions</h2>
+<h3 id="1-buildinstall-sireum-1">1. Build\Install <strong>Sireum</strong></h3>
+<p>Open a <strong>terminal</strong> and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone --recursive https://github.com/sireum/kekinian Sireum
+</span></span><span style="display:flex;"><span>Sireum/bin/build.cmd
+</span></span></code></pre></div><p>(Recommended) Add the following environment variables so Sireum tools are available from any shell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export SIREUM_HOME<span style="color:#f92672">=</span>&lt;path-to-Sireum&gt;/Sireum
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$SIREUM_HOME/bin:$PATH
+</span></span></code></pre></div><h3 id="2-install-ive-1">2. Install <strong>IVE</strong></h3>
+<p><em>(Interactive Verification Environment based on IntelliJ)</em></p>
+<p>From a terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$SIREUM_HOME/bin/sireum setup ive
+</span></span></code></pre></div><p>Launch IVE</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$SIREUM_HOME/bin/linux/idea/bin/IVE.sh &gt; /dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> &amp;
+</span></span></code></pre></div><h3 id="3-install-codeive-1">3. Install CodeIVE</h3>
+<p>Interactive Verification Environment based on VS Codium, for Rust and SysMLv2 IDE support</p>
+<p>From a terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$SIREUM_HOME/bin/sireum setup vscode
+</span></span></code></pre></div><p>Launch CodeIVE</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$SIREUM_HOME/bin/linux/vscodium/bin/codeive &gt; /dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> &amp;
+</span></span></code></pre></div><h2 id="macos-setup-instructions">macOS Setup Instructions</h2>
+<h3 id="1-buildinstall-sireum-2">1. Build\Install <strong>Sireum</strong></h3>
+<p>Open a <strong>terminal</strong> and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone --recursive https://github.com/sireum/kekinian Sireum
+</span></span><span style="display:flex;"><span>Sireum/bin/build.cmd
+</span></span></code></pre></div><p>(Recommended) Add the following environment variables so Sireum tools are available from any shell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export SIREUM_HOME<span style="color:#f92672">=</span>&lt;path-to-Sireum&gt;/Sireum
+</span></span><span style="display:flex;"><span>export PATH<span style="color:#f92672">=</span>$SIREUM_HOME/bin:$PATH
+</span></span></code></pre></div><h3 id="2-install-ive-2">2. Install <strong>IVE</strong></h3>
+<p><em>(Interactive Verification Environment based on IntelliJ)</em></p>
+<p>From a terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$SIREUM_HOME/bin/sireum setup ive
+</span></span></code></pre></div><p>Launch IVE</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>open %SIREUM_HOME/bin/mac/idea/IVE.app
+</span></span></code></pre></div><h3 id="3-install-codeive-2">3. Install CodeIVE</h3>
+<p>Interactive Verification Environment based on VS Codium, for Rust and SysMLv2 IDE support</p>
+<p>From a terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$SIREUM_HOME/bin/sireum setup vscode
+</span></span></code></pre></div><p>Launch CodeIVE</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>open $SIREUM_HOME/bin/mac/vscodium/CodeIVE.app
+</span></span></code></pre></div><h1 id="rust-1">Rust</h1>
+<p>Install Rust via <code>rustup</code> according to the <a href="https://rust-lang.org/tools/install/">official Rust installation instructions</a>.   You might want to take a look at the discussion of &ldquo;Rust tool chains&rdquo; (essentially, having different versions of Rust installed).  In the future, when we start working with Verus, we will need to rely on older version(s) of Rust.</p>
+<p>Install the Rustlings exercise framework following the instructions <a href="https://rustlings.rust-lang.org">here</a></p>
 
             </div>
         </article>
