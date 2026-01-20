@@ -4,7 +4,7 @@
     <title>CS 855 Homepage</title>
     <link>https://s21.highassurance.santoslab.org/</link>
     <description>Recent content on CS 855 Homepage</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://s21.highassurance.santoslab.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,49 +12,49 @@
       <link>https://s21.highassurance.santoslab.org/schedule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/schedule/</guid>
-      <description>Schedule Week 1: January 20 Lectures:&#xA;Tuesday - Course Administration (live) On your own (recorded lectures &amp;ndash; see Lectures page) HAMR Overview (part 1) HAMR Overview (part 2) Homework&#xA;HAMR tutorials (see Lectures page) HAMR Installation AADL OSATE Workspace Concepts Loading an Existing AADL Project into OSATE/FMIDE Loading an Generated/Existing HAMR Slang Project into the IntelliJ-based Sireum IVE Refactoring an AADL Model to Remove Ports and Change Port Categories Refactoring a Slang Implementation of an AADL System Due January 26, 11:59pm</description>
+      <description>&lt;h1 id=&#34;schedule&#34;&gt;Schedule&lt;/h1&gt;&#xA;&lt;h2 id=&#34;week-1-january-19&#34;&gt;Week 1: January 19&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lectures:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tuesday - Course Administration (live)&lt;/li&gt;&#xA;&lt;li&gt;On your own&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HAMR Overview (part a)&lt;/li&gt;&#xA;&lt;li&gt;HAMR Overview (part b)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Homework&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HAMR Installation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Due January 26, 11:59pm&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;week-2-january-26&#34;&gt;Week 2: January 26&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lectures:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tuesday (live)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HAMR Demo and discussion&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;On your own (recorded lectures &amp;ndash; see Lectures page)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AADL Overview&lt;/li&gt;&#xA;&lt;li&gt;AADL: Modeling Embedded Software&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;week-3-february-2&#34;&gt;Week 3: February 2&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lectures:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;(TBA)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;week-4-february-9&#34;&gt;Week 4: February 9&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;(TBA)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>CS 855 Syllabus</title>
       <link>https://s21.highassurance.santoslab.org/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/syllabus/</guid>
-      <description>Syllabus CS 855: High-Assurance Systems, Spring 2025&#xA;Purpose The course will cover techniques for developing high assurance systems – systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques – techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification.</description>
+      <description>&lt;h1 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h1&gt;&#xA;&lt;p&gt;CS 855: High-Assurance Systems, Spring 2026&lt;/p&gt;&#xA;&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;The course will cover techniques for developing high assurance systems – systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques – techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification. The goal of this course teach techniques for developing critical software that would usually not be covered in other courses in your computer science degree program. In particular, the course will focus on writing requirements for safety critical systems, formal architecture definition, risk management techniques including various forms of hazard analysis, safety systems, and automated verification. We will aim to illustrate an end-to-end development process for critical systems using examples of varying size.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://s21.highassurance.santoslab.org/bio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/bio/</guid>
-      <description>John Hatcliff &amp;ndash; Bio Sketch Bio Sketch - To be Completed</description>
+      <description>&lt;h3 id=&#34;john-hatcliff--bio-sketch&#34;&gt;John Hatcliff &amp;ndash; Bio Sketch&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Bio Sketch - To be Completed&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://s21.highassurance.santoslab.org/lectures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/lectures/</guid>
-      <description>Lectures Course Administration Slides Safety Critical Systems Concepts Lecture: Control Loop Basics illustrated with Temperature Controller Example&#xA;This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way).</description>
+      <description>&lt;h1 id=&#34;lectures&#34;&gt;Lectures&lt;/h1&gt;&#xA;&lt;h2 id=&#34;course-administration&#34;&gt;Course Administration&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://drive.google.com/file/d/1CMybdmwpR-T_u0QXCCTDWdZRNm2af3Qq/view?usp=sharing&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;safety-critical-systems-concepts&#34;&gt;Safety Critical Systems Concepts&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Lecture: Control Loop Basics illustrated with Temperature Controller Example&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This lecture introduces concepts associated with “control loops” – a foundational concept in the design and implementation of embedded systems and safety-critical systems. A control loop consists of the “real-world thing” that the system is trying to control (the controlled process), the controller (i.e., software/hardware that makes decisions about how to control the controlled process), sensors (used by the controller to get “readings” the real-world state of the controlled process), and actuators (used by the controller to change the state of the controlled process in some way). The lecture briefly discusses how requirements engineering and safety reasoning relate to control loops.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://s21.highassurance.santoslab.org/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/overview/</guid>
-      <description>Overview This course covers techniques for developing high assurance systems – systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques – techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification.</description>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;This course covers techniques for developing high assurance systems – systems that are safety critical, security critical, or mission critical in nature. In contrast to general purpose systems, high assurance system development tends to place a more stronger emphasis on rigorous requirements and specifications, verification and validation, risk management, and certification. High assurance system development is more likely to be amenable to and benefit from formal verification techniques – techniques that use various forms of machine-checkable mathematics or logic to demonstrate that a system satisfies its specification.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://s21.highassurance.santoslab.org/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/project/</guid>
-      <description>Project This year the course project will involve specifying and verifying the software of two medical devices:&#xA;An &amp;ldquo;Isolette&amp;rdquo; (infant incubator) - the medical goal of the Isolette is to keep a new-born baby at an appropriate temperature for the first hours of its life by placing it in an enclosure in which the air in the enclosure can be monitored and controlled. A Patient-Controlled Analgesic (PCA) Pump - the medical goal of a PCA pump is to provide a hospital patient with pain relief by intravenously infusing opioids at intervals partially controlled by a patient.</description>
+      <description>&lt;h1 id=&#34;project&#34;&gt;Project&lt;/h1&gt;&#xA;&lt;p&gt;This year the course projects will be one of the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;An &amp;ldquo;Isolette&amp;rdquo; (infant incubator) - the medical goal of the Isolette is to keep a new-born baby at an appropriate temperature for the first hours of its life by placing it in an enclosure in which the air in the enclosure can be monitored and controlled.  The goal for this project will be to extend it in various ways.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>https://s21.highassurance.santoslab.org/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://s21.highassurance.santoslab.org/tools/</guid>
-      <description>Tools This course will use the following tools, which students should have installed on laptops that can be brought to class for in-class exercises.&#xA;Sireum&#xA;Sireum is a programming language, software engineering, and formal methods framework developed at Kansas State University. This class will use Slang (the Sireum programming Language) and Logika (an automated SMT-based verification environment for Slang)&#xA;Download and installation instructions &amp;ndash; installation based on git sources is recommended Video overview of Slang and Logika </description>
+      <description>&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;&#xA;&lt;p&gt;This course will use the following tools, which students should have installed on laptops that can be brought to class for in-class exercises.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http:sireum.org/&#34;&gt;Sireum&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sireum is a programming language, software engineering, and formal methods framework developed at Kansas State University.   This class will use Slang (the Sireum programming Language) and Logika (an automated SMT-based verification environment for Slang)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sireum.org/getting-started/&#34;&gt;Download and installation instructions&lt;/a&gt; &amp;ndash; installation based on git sources is needed for this class&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;&#xA;&lt;p&gt;While the above Sireum/HAMR installation steps will install all of the tools needed for the class, here are some links to other documentation that you might find useful.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
